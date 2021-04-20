@@ -1,4 +1,8 @@
-#!/bin/bash -v
+#!/usr/bin/env sh
+
+
+
+
 echo "😀-------正在打包项目···-------"
 chmod vuepress build docs
 echo "👏-------添加文件到仓库-------"
