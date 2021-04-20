@@ -1,4 +1,5 @@
-# 通过Git+webhook自动提交Git仓库并部署
+# 利用webhook实现自动化部署
+
 ```sh
 #!/usr/bin/env sh
 # 确保脚本抛出遇到的错误
