@@ -19,7 +19,8 @@ module.exports = {
             },
             {
                 text: '日常笔记',
-                link: '/notes/npm'
+                link: '/notes/npm',
+                ariaLabel: '日常笔记',
             },
             {
                 text: '专题笔记',
