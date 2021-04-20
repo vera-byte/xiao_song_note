@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add @vuepress/last-updated
+  /usr/local/bin/node /usr/local/bin/yarn add @vuepress/last-updated -D
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin

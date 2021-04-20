@@ -102,9 +102,8 @@ module.exports = {
         ['@vuepress/search', {
             searchMaxSuggestions: 10
         }],
-        {
-            '@vuepress/last-updated': true
-        }
+        // 最后更新时间
+        ['@vuepress/last-updated']
     ]
 
 }
