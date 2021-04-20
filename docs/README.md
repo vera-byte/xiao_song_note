@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/img/logo.gif
+heroImage: note/docs/.vuepress/dist/assets/img/logo.gif
 heroText: 欢迎来到全栈攻城狮的分享集
 tagline: 一个全栈攻城狮的笔记
 actionText: 个人简介 →
