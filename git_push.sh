@@ -1,4 +1,4 @@
-
+#!/bin/bash -v
 echo "打包项目"
 vuepress build docs
 echo "添加文件到仓库"
