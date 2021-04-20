@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
+
+echo "打包项目"
+vuepress build docs
 echo "添加文件到仓库"
 git add .
 echo "写入提交信息"
