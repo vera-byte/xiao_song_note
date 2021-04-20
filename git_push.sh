@@ -1,7 +1,10 @@
 #!/usr/bin/env sh
+# 确保脚本抛出遇到的错误
+set -e
+
 echo "😀-------正在打包项目···-------"
 
-chmod vuepress build docs
+vuepress build docs
 
 echo "👏-------添加文件到仓库-------"
 
