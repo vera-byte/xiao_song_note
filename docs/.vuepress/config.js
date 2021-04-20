@@ -101,7 +101,10 @@ module.exports = {
         // 搜索
         ['@vuepress/search', {
             searchMaxSuggestions: 10
-        }]
+        }],
+        {
+            '@vuepress/last-updated': true
+        }
     ]
 
 }
