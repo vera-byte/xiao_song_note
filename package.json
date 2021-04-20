@@ -1,0 +1,23 @@
+{
+  "name": "xiao_song_note",
+  "version": "1.0.0",
+  "description": "全栈工程师宋的笔记",
+  "main": "index.js",
+  "author": "xiao_song",
+  "license": "MIT",
+  "private": "false",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-search": "^1.8.2",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-auto-sidebar": "^2.2.2"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
