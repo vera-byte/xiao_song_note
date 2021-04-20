@@ -19,6 +19,6 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "release": "chmod 755 ./git_push.sh"
+    "release": "./git_push.sh"
   }
 }
