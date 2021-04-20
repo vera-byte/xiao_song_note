@@ -19,7 +19,7 @@ module.exports = {
             },
             {
                 text: '日常笔记',
-                link: '/notes/'
+                link: '/notes/npm'
             },
             {
                 text: '专题笔记',
