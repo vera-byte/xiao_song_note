@@ -105,8 +105,7 @@ module.exports = {
         }],
         // 最后更新时间
         ['@vuepress/last-updated'],
-        // 文字阅读所需时间
-        ['vuepress-plugin-reading-time']
+
     ]
 
 }

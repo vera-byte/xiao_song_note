@@ -1,8 +1,4 @@
----
-title: My great post!
-date: "2018-08-13T17:36:55.338Z"
-readingTime: { text: "Not so long!", minutes: 3 }
----
+
 
 # 利用webhook实现自动化部署
 ## 环境依赖
