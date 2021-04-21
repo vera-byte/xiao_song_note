@@ -172,6 +172,11 @@ module.exports = {
         ['code-switcher'],
         // 给代码块自动添加复制按钮
         ["vuepress-plugin-code-copy", true]
+        // 扫码查看
+        ['qrcode', {
+            labelText: 'Mobile Read', // displayed text
+            size: 'small' // QR code size
+        }]
 
 
     ]

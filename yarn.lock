@@ -6623,6 +6623,11 @@ q@^1.1.2:
   resolved "https://registry.npm.taobao.org/q/download/q-1.5.1.tgz"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qrcode.vue@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.npm.taobao.org/qrcode.vue/download/qrcode.vue-1.7.0.tgz?cache=0&sync_timestamp=1611636013116&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fqrcode.vue%2Fdownload%2Fqrcode.vue-1.7.0.tgz#c54b2934f0650c10d92785d08aaad36c55e0fc56"
+  integrity sha1-xUspNPBlDBDZJ4XQiqrTbFXg/FY=
+
 qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.npm.taobao.org/qs/download/qs-6.7.0.tgz"
@@ -8423,6 +8428,13 @@ vuepress-plugin-mygitalk@^1.0.5:
   dependencies:
     gitalk "^1.5.0"
     lodash "^4.17.15"
+
+vuepress-plugin-qrcode@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.nlark.com/vuepress-plugin-qrcode/download/vuepress-plugin-qrcode-1.0.7.tgz#3357ee2bbe9f6d601edfab81c2e8f24b266c1215"
+  integrity sha1-M1fuK76fbWAe36uBwujySyZsEhU=
+  dependencies:
+    qrcode.vue "^1.7.0"
 
 vuepress-plugin-reading-progress@^1.0.10:
   version "1.0.10"
