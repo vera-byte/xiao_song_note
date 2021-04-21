@@ -149,7 +149,7 @@ module.exports = {
             }
         ],
         // 最后更新时间
-        ['@vuepress/last-updated'],
+        ['@vuepress/last-updated', "最后一次更新时间"],
         // SEO
         ['seo', {
             siteTitle: (_, $site) => $site.title,
