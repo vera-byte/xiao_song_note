@@ -71,7 +71,7 @@ module.exports = {
                     clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6',
                     repo: 'vuepress-plugin-gitalk-maker',
                     owner: 'metoyun',
-                    admin: ['xxholly32'],
+                    admin: ['metoyun'],
                     // id: location.pathname, // 无法配置默认用 location.pathname
                     distractionFreeMode: false, // Facebook-like distraction free mode
                 },
