@@ -507,3 +507,10 @@ Ctrl+K ← / →
 </template>
 </CodeSwitcher>
 
+ <iframe  
+ height=850 
+ width=90% 
+ src="https://www.52cik.com/vscode-keyboard-shortcuts/"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
