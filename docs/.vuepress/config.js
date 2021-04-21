@@ -145,11 +145,9 @@ module.exports = {
             {
                 "hostUrl": "https://meilisearch.metoyun.com", // Mandatory
                 "apiKey": "song598853", // Mandatory
-                "indexUid": "vuepress", // Mandatory
+                "indexUid": "docs", // Mandatory
                 "placeholder": "请输入你的问题", // Default: ""
-                "maxSuggestions": 10, // Default: 5
-                "hotKeys": ['Vscode', 'uniapp', 'git'], // Default: ['s', '/']
-                "cropLength": 50 // Default: 30
+
             }
         ],
         // 最后更新时间
