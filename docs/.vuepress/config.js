@@ -64,17 +64,31 @@ module.exports = {
     plugins: [
         // 评论插件
         [
-            '@vssue/vuepress-plugin-vssue', {
-                platform: 'github', //v3的platform是github，v4的是github-v4
-                locale: 'zh', //语言
-                // 其他的 Vssue 配置
-                owner: 'metoyun', //github账户名
-                repo: 'xiao_song_note', //github一个项目的名称
-                clientId: '361954bcd71295a4340b', //注册的Client ID
-                clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6', //注册的Client Secret
-                autoCreateIssue: true // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
+            'gitalk-maker',
+            {
+                gitalkConfig: {
+                    clientID: '361954bcd71295a4340b',
+                    clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6',
+                    repo: 'vuepress-plugin-gitalk-maker',
+                    owner: 'metoyun',
+                    admin: ['xxholly32'],
+                    // id: location.pathname, // 无法配置默认用 location.pathname
+                    distractionFreeMode: false, // Facebook-like distraction free mode
+                },
             },
         ],
+        // [
+        //     '@vssue/vuepress-plugin-vssue', {
+        //         platform: 'github', //v3的platform是github，v4的是github-v4
+        //         locale: 'zh', //语言
+        //         // 其他的 Vssue 配置
+        //         owner: 'metoyun', //github账户名
+        //         repo: 'xiao_song_note', //github一个项目的名称
+        //         clientId: '361954bcd71295a4340b', //注册的Client ID
+        //         clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6', //注册的Client Secret
+        //         autoCreateIssue: true // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
+        //     },
+        // ],
         // 自动生成侧边栏插件
         ["vuepress-plugin-auto-sidebar", {
             // options
@@ -124,7 +138,7 @@ module.exports = {
         // 阅读进度条
         'reading-progress',
         // 代码块多语言切换
-        [ 'code-switcher' ],
+        ['code-switcher'],
 
     ]
 
