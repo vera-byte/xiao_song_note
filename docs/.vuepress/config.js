@@ -140,13 +140,13 @@ module.exports = {
         // 代码块多语言切换
         ['code-switcher'],
         // 给代码块自动添加复制按钮
-        ["vuepress-plugin-code-copy", {
-            selector: String,
-            align: String,
-            color: String,
-            backgroundTransition: Boolean,
-            backgroundColor: String,
-            successText: String
+        ["vuepress-plugin-code-copy", true, {
+            selector: "",
+            align: "center",
+            color: "#ff4d4f",
+            backgroundTransition: true,
+            backgroundColor: "#000000",
+            successText: "xiao_song_note"
         }]
 
 
