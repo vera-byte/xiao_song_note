@@ -1,6 +1,6 @@
 # Vscode快捷键
-<CodeSwitcher :languages="{win:'Windwos',mac:'Mac'}">
-<template v-slot:js>
+<CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
+<template v-slot:mac>
 
 ```mac
 全局
