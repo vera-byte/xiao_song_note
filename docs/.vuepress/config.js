@@ -120,7 +120,11 @@ module.exports = {
             modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
         }],
         // multidir-一个VuePress博客插件，支持多个文件夹
-        'blog-multidir'
+        'blog-multidir',
+        // 阅读进度条
+        'reading-progress',
+        // 代码块多语言切换
+        [ 'code-switcher' ],
 
     ]
 
