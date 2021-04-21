@@ -142,14 +142,14 @@ module.exports = {
         // }],
         [
             "vuepress-plugin-meilisearch",
-            {
-                "hostUrl": "https://note.metoyun.com",
-                "apiKey": "XXX",
-                "indexUid": "docs"
-            }
+            // {
+            //     "hostUrl": "https://note.metoyun.com",
+            //     "apiKey": "XXX",
+            //     "indexUid": "docs"
+            // }
         ],
         // 最后更新时间
-        ['@vuepress/last-updated', "最后一次更新时间"],
+        ['@vuepress/last-updated'],
         // SEO
         ['seo', {
             siteTitle: (_, $site) => $site.title,
