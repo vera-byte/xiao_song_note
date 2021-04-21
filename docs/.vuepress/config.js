@@ -72,7 +72,7 @@ module.exports = {
                     repo: 'vuepress-plugin-gitalk-maker',
                     owner: 'metoyun',
                     admin: ['xykj', 'metoyun'],
-                    id: location.pathname, // 无法配置默认用 location.pathname
+                    // id: location.pathname, // 无法配置默认用 location.pathname
                     distractionFreeMode: true, // Facebook-like distraction free mode
                 },
             },
