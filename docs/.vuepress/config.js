@@ -114,9 +114,17 @@ module.exports = {
         // 进度条
         '@vuepress/nprogress',
         // 搜索
-        ['@vuepress/search', {
-            searchMaxSuggestions: 10
-        }],
+        // ['@vuepress/search', {
+        //     searchMaxSuggestions: 10
+        // }],
+        [
+            "vuepress-plugin-meilisearch",
+            {
+                "hostUrl": "https://note.metoyun.com",
+                "apiKey": "XXX",
+                "indexUid": "docs"
+            }
+        ],
         // 最后更新时间
         ['@vuepress/last-updated'],
         // SEO
@@ -140,14 +148,7 @@ module.exports = {
         // 代码块多语言切换
         ['code-switcher'],
         // 给代码块自动添加复制按钮
-        ["vuepress-plugin-code-copy", true, {
-            selector: "",
-            align: "center",
-            color: "#ff4d4f",
-            backgroundTransition: true,
-            backgroundColor: "#000000",
-            successText: "xiao_song_note"
-        }]
+        ["vuepress-plugin-code-copy", true]
 
 
     ]
