@@ -174,7 +174,7 @@ module.exports = {
         ["vuepress-plugin-code-copy", true],
         // 扫码查看
         ['qrcode', {
-            labelText: 'Mobile Read', // displayed text
+            labelText: '扫码阅读', // displayed text
             size: 'small' // QR code size
         }]
 
