@@ -65,10 +65,10 @@ module.exports = {
         // 评论插件
         [
             '@vssue/vuepress-plugin-vssue', {
-                platform: 'github-v4', //v3的platform是github，v4的是github-v4
+                platform: 'github', //v3的platform是github，v4的是github-v4
                 locale: 'zh', //语言
                 // 其他的 Vssue 配置
-                owner: 'xykj', //github账户名
+                owner: 'metoyun', //github账户名
                 repo: 'xiao_song_note', //github一个项目的名称
                 clientId: '361954bcd71295a4340b', //注册的Client ID
                 clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6', //注册的Client Secret
