@@ -1,5 +1,5 @@
 # Vscode快捷键Mac
-``` sh
+``` css
 全局
 Command + Shift + P / F1 显示命令面板
 Command + P 快速打开
