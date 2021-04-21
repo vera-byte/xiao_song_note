@@ -90,7 +90,7 @@ module.exports = {
                     // GitHub Application Client Secret.
                     clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6',
                     // GitHub repository. 存储评论的 repo
-                    repo: 'metoyun',
+                    repo: 'xiao_song_note',
                     // GitHub repository 所有者，可以是个人或者组织。
                     owner: 'metoyun',
                     // GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。(不配置默认是owner配置)
