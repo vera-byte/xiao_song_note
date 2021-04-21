@@ -143,8 +143,8 @@ module.exports = {
         [
             "vuepress-plugin-meilisearch",
             {
-                "hostUrl": "https://note.metoyun.com", // Mandatory
-                "apiKey": "", // Mandatory
+                "hostUrl": "http://127.0.0.1:7700", // Mandatory
+                "apiKey": "song598853", // Mandatory
                 "indexUid": "docs-test", // Mandatory
                 "placeholder": "Search as you type...", // Default: ""
                 "maxSuggestions": 10, // Default: 5
