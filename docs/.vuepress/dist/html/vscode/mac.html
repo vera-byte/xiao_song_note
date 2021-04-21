@@ -334,44 +334,12 @@
       <p
         title="Other operating systems’ keyboard shortcuts and additional unassigned shortcuts available at aka.ms/vscodekeybindings">
         其他操作系统的键盘快捷键和其他未分配的快捷方式可在
-        <a href="http://aka.ms/vscodekeybindings">aka.ms/vscodekeybindings</a>
+        <a href="http://aka.ms/vscodekeybindings">在线查看</a>
         获得。
       </p>
     </div>
   </div>
 
-  <script src="./Visual Studio Code - 快捷键参考_files/jquery.min.js"></script>
-  <script src="./Visual Studio Code - 快捷键参考_files/vue.min.js"></script>
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        active: 'mac',
-        platforms: {
-          mac: {},
-          win: {},
-          linux: {},
-        },
-      },
-      computed: {
-        docs() {
-          return this.platforms[this.active];
-        },
-      },
-      mounted() {
-        getData('mac', 'cn', function (res) {
-          app.platforms.mac = res;
-        });
-        getData('win', 'cn', function (res) {
-          app.platforms.win = res;
-        });
-      }
-    });
-
-    function getData(platform, lang, cb) {
-      $.get('platforms/' + platform + '_' + lang + '.json', cb, 'json');
-    }
-  </script>
 
 </body>
 

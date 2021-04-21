@@ -5,7 +5,7 @@
 
  <iframe  
  height=850 
- width=90% 
+ width=100% 
  src="/html/vscode/mac.html"  
  frameborder=0  
  allowfullscreen>
@@ -15,7 +15,7 @@
 
  <iframe  
  height=850 
- width=90% 
+ width=100% 
  src="/html/vscode/windows.html"  
  frameborder=0  
  allowfullscreen>
