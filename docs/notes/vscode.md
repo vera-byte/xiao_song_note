@@ -3,8 +3,7 @@
 
 <template v-slot:mac>
  <iframe  
- height=1000
- width=100% 
+style="padding-top: 15px;height: 1700px;"
  src="/html/vscode/mac.html"  
  frameborder=0  
  allowfullscreen>
@@ -13,8 +12,7 @@
 <template v-slot:win>
 
  <iframe  
-  height=1000
- width=100% 
+  style="padding-top: 15px;height: 1700px;"
  src="/html/vscode/windows.html"  
  frameborder=0  
  allowfullscreen>
