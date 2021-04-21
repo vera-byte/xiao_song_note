@@ -24,3 +24,6 @@ style="padding-top: 15px;height: 1700px;"
 
 </CodeSwitcher>
 
+
+[在线查看Vscode快捷键](https://http://aka.ms/vscodekeybindings) 
+
