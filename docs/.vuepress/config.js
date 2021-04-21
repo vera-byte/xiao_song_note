@@ -82,7 +82,7 @@ module.exports = {
                 // 是否启用(关闭请设置为false)(default: true)
                 enable: true,
                 // 是否开启首页评论(default: true)
-                home: true,
+                home: false,
                 // Gitalk配置
                 gitalk: {
                     // GitHub Application Client ID.
