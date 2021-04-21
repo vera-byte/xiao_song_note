@@ -1,5 +1,8 @@
-# Vscode快捷键Mac
-``` sh
+# Vscode快捷键
+<CodeSwitcher :languages="{win:'Windwos',mac:'Mac'}">
+<template v-slot:js>
+
+```mac
 全局
 Command + Shift + P / F1 显示命令面板
 Command + P 快速打开
@@ -161,7 +164,15 @@ PgUp 向上翻页
 PgDown 向下翻页
 Command + Home 滚动到顶部
 Command + End 滚动到底部
+```
 
+</template>
+<template v-slot:win>
 
+```win
 
 ```
+
+</template>
+</CodeSwitcher>
+
