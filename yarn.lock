@@ -1207,7 +1207,7 @@
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.8.2.tgz#74b92f663acf6b4560e15dc0442a84c4e874e206"
   integrity sha1-dLkvZjrPa0Vg4V3ARCqExOh04gY=
 
-"@vuepress/shared-utils@1.8.2", "@vuepress/shared-utils@^1.2.0":
+"@vuepress/shared-utils@1.8.2", "@vuepress/shared-utils@^1.0.0-alpha.39", "@vuepress/shared-utils@^1.2.0":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.2.tgz#5ec1601f2196aca34ad82eed7c9be2d7948f705b"
   integrity sha1-XsFgHyGWrKNK2C7tfJvi15SPcFs=
@@ -7951,6 +7951,13 @@ vuepress-plugin-auto-sidebar@^2.2.2:
     colors "^1.4.0"
     execa "^5.0.0"
     merge "^2.1.1"
+
+vuepress-plugin-blog-multidir@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.nlark.com/vuepress-plugin-blog-multidir/download/vuepress-plugin-blog-multidir-1.0.5.tgz#173acaba3f06a7ed7462157db62b6f1d3a2c1524"
+  integrity sha1-FzrKuj8Gp+10YhV9titvHTosFSQ=
+  dependencies:
+    "@vuepress/shared-utils" "^1.0.0-alpha.39"
 
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"

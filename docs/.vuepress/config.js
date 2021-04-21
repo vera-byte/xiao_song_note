@@ -118,7 +118,10 @@ module.exports = {
             image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
             publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
             modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
-        }]
+        }],
+        // multidir-一个VuePress博客插件，支持多个文件夹
+        'blog-multidir'
+
     ]
 
 }
