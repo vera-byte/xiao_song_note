@@ -8416,6 +8416,14 @@ vuepress-plugin-meilisearch@^0.10.7:
   dependencies:
     docs-searchbar.js "^1.1.11"
 
+vuepress-plugin-mygitalk@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.nlark.com/vuepress-plugin-mygitalk/download/vuepress-plugin-mygitalk-1.0.5.tgz#1e835d0691f7fc88395ec1224085f7ae4209aafc"
+  integrity sha1-HoNdBpH3/Ig5XsEiQIX3rkIJqvw=
+  dependencies:
+    gitalk "^1.5.0"
+    lodash "^4.17.15"
+
 vuepress-plugin-reading-progress@^1.0.10:
   version "1.0.10"
   resolved "https://registry.nlark.com/vuepress-plugin-reading-progress/download/vuepress-plugin-reading-progress-1.0.10.tgz"

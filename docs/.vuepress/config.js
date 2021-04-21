@@ -63,19 +63,42 @@ module.exports = {
     },
     plugins: [
         // 评论插件
+        // [
+        //     'gitalk-maker',
+        //     {
+        //         gitalkConfig: {
+        //             clientID: '361954bcd71295a4340b',
+        //             clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6',
+        //             repo: 'vuepress-plugin-gitalk-maker',
+        //             owner: 'metoyun',
+        //             admin: ['xykj', 'metoyun'],
+        //             // id: location.pathname, // 无法配置默认用 location.pathname
+        //             distractionFreeMode: true, // Facebook-like distraction free mode
+        //         },
+        //     },
+        // ],
         [
-            'gitalk-maker',
-            {
-                gitalkConfig: {
+            'vuepress-plugin-mygitalk', {
+                // 是否启用(关闭请设置为false)(default: true)
+                enable: true,
+                // 是否开启首页评论(default: true)
+                home: true,
+                // Gitalk配置
+                gitalk: {
+                    // GitHub Application Client ID.
                     clientID: '361954bcd71295a4340b',
+                    // GitHub Application Client Secret.
                     clientSecret: '7ea7704e2c82f6951093443f03318d8ae15952e6',
-                    repo: 'vuepress-plugin-gitalk-maker',
+                    // GitHub repository. 存储评论的 repo
+                    repo: 'metoyun',
+                    // GitHub repository 所有者，可以是个人或者组织。
                     owner: 'metoyun',
+                    // GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。(不配置默认是owner配置)
                     admin: ['xykj', 'metoyun'],
-                    // id: location.pathname, // 无法配置默认用 location.pathname
-                    distractionFreeMode: true, // Facebook-like distraction free mode
-                },
-            },
+                    // 设置语言(default: zh-CN)
+                    language: 'zh-CN',
+                }
+            }
         ],
         // [
         //     '@vssue/vuepress-plugin-vssue', {
