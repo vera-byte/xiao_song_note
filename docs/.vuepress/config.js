@@ -177,8 +177,6 @@ module.exports = {
             labelText: '扫码阅读', // displayed text
             size: 'small' // QR code size
         }]
-
-
     ]
 
 }
