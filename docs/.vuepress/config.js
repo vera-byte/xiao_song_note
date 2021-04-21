@@ -142,11 +142,15 @@ module.exports = {
         // }],
         [
             "vuepress-plugin-meilisearch",
-            // {
-            //     "hostUrl": "https://note.metoyun.com",
-            //     "apiKey": "XXX",
-            //     "indexUid": "docs"
-            // }
+            {
+                "hostUrl": "https://note.metoyun.com", // Mandatory
+                "apiKey": "", // Mandatory
+                "indexUid": "docs-test", // Mandatory
+                "placeholder": "Search as you type...", // Default: ""
+                "maxSuggestions": 10, // Default: 5
+                "hotKeys": ['Vscode', 'uniapp', 'git'], // Default: ['s', '/']
+                "cropLength": 50 // Default: 30
+            }
         ],
         // 最后更新时间
         ['@vuepress/last-updated'],
