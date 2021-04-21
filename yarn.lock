@@ -8193,6 +8193,11 @@ vuepress-plugin-blog-multidir@^1.0.5:
   dependencies:
     "@vuepress/shared-utils" "^1.0.0-alpha.39"
 
+vuepress-plugin-code-copy@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-code-copy/download/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
+  integrity sha1-ZDHat2S0i1sgPkk22YsZQ2Uc5K0=
+
 vuepress-plugin-code-switcher@^1.1.0:
   version "1.1.0"
   resolved "https://registry.nlark.com/vuepress-plugin-code-switcher/download/vuepress-plugin-code-switcher-1.1.0.tgz"
