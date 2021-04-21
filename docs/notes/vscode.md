@@ -1,8 +1,7 @@
 # Vscode快捷键
 <CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
+--------------------------------
 <template v-slot:mac>
-
-
  <iframe  
  height=850 
  width=100% 
@@ -22,5 +21,6 @@
  </iframe>
 
 </template>
+--------------------------------
 </CodeSwitcher>
 
