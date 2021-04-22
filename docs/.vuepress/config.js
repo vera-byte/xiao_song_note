@@ -8,6 +8,20 @@ module.exports = {
                 href: '/assets/img/logo.gif'
             }
         ],
+        [
+            'meta',
+            {
+                name: 'keywords',
+                content: '全栈笔记,vuepress,git,electron,vue,uniapp,coding,全栈工程师,小宋,'
+            }
+        ],
+        [
+            'meta',
+            {
+                name: 'author',
+                content: '全栈工程师小宋'
+            }
+        ],
     ],
     title: '全栈攻城狮',
     description: '是全栈攻城狮呀',

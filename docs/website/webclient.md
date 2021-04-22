@@ -7,5 +7,3 @@
 - [uViewUi](https://uviewui.com/) 是 uni-app 生态最优秀的 UI 框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水
 - [vue-admin-beautiful-template](https://github.com/chuzhixin/vue-admin-beautiful-template) Vue后台管理模板
 - [uni-app 官网](https://uniapp.dcloud.io/) 一套代码，运行到多个平台
-
-哈哈
