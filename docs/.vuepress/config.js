@@ -63,6 +63,16 @@ module.exports = {
         ]
     },
     plugins: [
+        [
+            '@vuepress/pwa', {
+                serviceWorker: true,
+                updatePopup: {
+                    message: "有新的内容更新",
+                    buttonText: "刷新"
+                }
+            }
+        ],
+
         // 评论插件
         // [
         //     'gitalk-maker',
@@ -153,8 +163,9 @@ module.exports = {
         // ],
         // 最后更新时间
         ['@vuepress/last-updated',
+            "最后更新时间",
             {
-                text: "最后更新时间",
+
                 transformer: (timestamp) => {
                     // 不要忘了安装 moment
                     const moment = require('moment')
