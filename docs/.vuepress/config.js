@@ -1,3 +1,4 @@
+const moment =require('moment');
 module.exports = {
     head: [
         [
@@ -137,21 +138,30 @@ module.exports = {
         // 进度条
         '@vuepress/nprogress',
         // 搜索
-        // ['@vuepress/search', {
-        //     searchMaxSuggestions: 10
-        // }],
-        [
-            "vuepress-plugin-meilisearch",
-            {
-                "hostUrl": "https://meilisearch.metoyun.com", // Mandatory
-                "apiKey": "song598853", // Mandatory
-                "indexUid": "docs", // Mandatory
-                "placeholder": "请输入你的问题", // Default: ""
+        ['@vuepress/search', {
+            searchMaxSuggestions: 10
+        }],
+        // [
+        //     "vuepress-plugin-meilisearch",
+        //     {
+        //         "hostUrl": "https://meilisearch.metoyun.com", // Mandatory
+        //         "apiKey": "song598853", // Mandatory
+        //         "indexUid": "docs", // Mandatory
+        //         "placeholder": "请输入你的问题", // Default: ""
 
+        //     }
+        // ],
+        // 最后更新时间
+        ['@vuepress/last-updated',
+            {
+                transformer: (timestamp) => {
+                    // 不要忘了安装 moment
+                    const moment = require('moment')
+                    moment.locale('zh-CN')
+                    return moment(timestamp).fromNow("LLL")
+                }
             }
         ],
-        // 最后更新时间
-        ['@vuepress/last-updated'],
         // SEO
         ['seo', {
             siteTitle: (_, $site) => $site.title,
