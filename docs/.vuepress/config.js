@@ -27,6 +27,7 @@ module.exports = {
     description: '是全栈攻城狮呀',
     themeConfig: {
         // logo: '/assets/img/logo.gif',
+        lastUpdated: "更新时间",
         nav: [{
                 text: '首页',
                 link: '/',
@@ -176,16 +177,16 @@ module.exports = {
         //     }
         // ],
         // 最后更新时间
-        ['@vuepress/last-updated',
-            {
-                transformer: (timestamp) => {
-                    // 不要忘了安装 moment
-                    const moment = require('moment')
-                    moment.locale('zh-CN')
-                    return moment(timestamp).format("LLL")
-                }
-            }
-        ],
+        // ['@vuepress/last-updated',
+        //     {
+        //         transformer: (timestamp) => {
+        //             // 不要忘了安装 moment
+        //             const moment = require('moment')
+        //             moment.locale('zh-CN')
+        //             return moment(timestamp).format("LLL")
+        //         }
+        //     }
+        // ],
         // SEO
         ['seo', {
             siteTitle: (_, $site) => $site.title,
