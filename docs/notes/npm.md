@@ -14,7 +14,7 @@ npm adduser
 npm  config  set  registry  https://registry.npm.taobao.org 
 ```
 3.  恢复镜像
-``` npm 
+``` sh
 npm  config  delete  registry
 或
 npm  config  edit（手动删除）
@@ -35,7 +35,7 @@ npm  uninstall  包名
 ```
 6.  更新
 
-``` npm 
+``` sh
 npm  -g  update  包名  #  全局更新
 npm  update  包名  #  本地更新
 ```
