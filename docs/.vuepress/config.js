@@ -177,16 +177,16 @@ module.exports = {
         //     }
         // ],
         // 最后更新时间
-        // ['@vuepress/last-updated',
-        //     {
-        //         transformer: (timestamp) => {
-        //             // 不要忘了安装 moment
-        //             const moment = require('moment')
-        //             moment.locale('zh-CN')
-        //             return moment(timestamp).format("LLL")
-        //         }
-        //     }
-        // ],
+        ['@vuepress/last-updated',
+            {
+                transformer: (timestamp) => {
+                    // 不要忘了安装 moment
+                    const moment = require('moment')
+                    moment.locale('zh-CN')
+                    return moment(timestamp).format("LLL")
+                }
+            }
+        ],
         // SEO
         ['seo', {
             siteTitle: (_, $site) => $site.title,
