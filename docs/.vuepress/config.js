@@ -1,4 +1,4 @@
-const moment =require('moment');
+const moment = require('moment');
 module.exports = {
     head: [
         [
@@ -158,7 +158,7 @@ module.exports = {
                     // 不要忘了安装 moment
                     const moment = require('moment')
                     moment.locale('zh-CN')
-                    return moment(timestamp).fromNow("LLL")
+                    return moment(timestamp).format("LLL")
                 }
             }
         ],
