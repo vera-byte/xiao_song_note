@@ -154,6 +154,7 @@ module.exports = {
         // 最后更新时间
         ['@vuepress/last-updated',
             {
+                text: "最后更新时间",
                 transformer: (timestamp) => {
                     // 不要忘了安装 moment
                     const moment = require('moment')
