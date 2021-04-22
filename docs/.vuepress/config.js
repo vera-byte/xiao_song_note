@@ -213,7 +213,18 @@ module.exports = {
         ['qrcode', {
             labelText: '扫码阅读', // displayed text
             size: 'small' // QR code size
-        }]
+        }],
+        // 分享
+        ['social-share',
+            {
+                networks: ['qq', 'facebook', 'reddit', 'telegram', 'email', 'douban'],
+                email: 'xykj@email.metoyun.com',
+                fallbackImage: '/assets/img/logo.gif',
+                autoQuote: true,
+                isPlain: true,
+                // extendsNetworks,
+            },
+        ],
     ]
 
 }
