@@ -1,21 +1,20 @@
-### uniapp笔记
-<CodeSwitcher :languages="{js:'JavaScript',ts:'TypeScript'}">
-<template v-slot:js>
+# uniapp笔记
+## 使用Vscode创建Uniapp项目
 
-```js
-module.exports = function (str) {
-    return typeof str === 'string' && str.trim() === str
-}
+### CLI 工程
+## 全局安装 vue-cli 3.x（如已安装请跳过此步骤）
+
+
+``` sh
+
+npm install -g @vue/cli
+
 ```
 
-</template>
-<template v-slot:ts>
+## 通过 CLI 创建 uni-app 项目
 
-```ts
-export default function isString (str: string) : str is string {
-    return typeof str === 'string' && str.trim() === str
-}
+``` sh
+
+vue create -p dcloudio/uni-preset-vue 项目名
+
 ```
-
-</template>
-</CodeSwitcher>
