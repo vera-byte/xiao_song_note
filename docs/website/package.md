@@ -87,3 +87,60 @@ const  fse  =  require （'fs-extra' ）
 ```
 --------
 
+### handlebars 模板引擎
+- [handlebars]()handlebars 模板引擎
+
+``` sh 
+# 安装
+npm install handlebars
+```
+``` javascript
+// 使用
+```
+--------
+
+### inquirer 命令行交互
+- [inquirer]()inquirer 命令行交互
+``` sh
+# 安装
+npm install inquirer
+```
+``` javascript
+// 使用
+```
+--------
+
+### log-symbols 日志输出
+- [log-symbols]()log-symbols 日志输出
+
+``` sh
+# 安装
+npm install log-symbols
+```
+``` javascript
+// 使用
+```
+--------
+
+### ora 加载效果 图标
+- [ora]()ora 加载效果 图标
+
+``` sh
+# 安装
+npm install ora
+```
+``` javascript
+// 使用
+```
+--------
+### validate-npm-package-name 检验npm名字取的对不对
+- [validate-npm-package-name]()validate-npm-package-name 检验npm名字取的对不对
+
+``` sh
+# 安装
+npm install validate-npm-package-name
+```
+``` javascript
+// 使用
+```
+--------
