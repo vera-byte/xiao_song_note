@@ -26,6 +26,8 @@ console.log(chalk.blue('Hello world!'));
 [![NPM Downloads](https://img.shields.io/npm/dm/commander.svg?style=flat)](https://npmcharts.com/compare/commander?minimal=true)
 [![Install Size](https://packagephobia.now.sh/badge?p=commander)](https://packagephobia.now.sh/result?p=commander)
 
+--------
+
 ``` sh
 # 安装
     npm i commander
