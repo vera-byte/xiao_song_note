@@ -42,3 +42,16 @@ program.version('0.0.1');
 const program = new Command();
 program.version('0.0.1');
 ```
+- [download-git-rep](https://)
+[![GitLab pipeline](https://img.shields.io/gitlab/pipeline/flippidippi/download-git-repo)](https://gitlab.com/flippidippi/download-git-repo/builds)
+
+``` sh
+npm install download-git-repo
+```
+
+``` javascript
+// 使用从master的Github存储库下载http
+download('flippidippi/download-git-repo-fixture', 'test/tmp', function (err) {
+  console.log(err ? 'Error' : 'Success')
+})
+```
