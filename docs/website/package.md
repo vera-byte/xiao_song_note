@@ -1,5 +1,7 @@
 # npm常用的三方库
 ## 终端库
+
+### chalk终端样式库
 - [chalk](https://www.npmjs.com/package/chalk)chalk终端样式库 
 
 [![Coverage Status](https://coveralls.io/repos/github/chalk/chalk/badge.svg?branch=main)](https://coveralls.io/github/chalk/chalk?branch=main)
@@ -20,7 +22,7 @@ const chalk = require('chalk');
 console.log(chalk.blue('Hello world!'));
 ```
 --------
-
+### commander 完整的 node.js 命令行解决方案
 - [commander](https://www.npmjs.com/package/commander)commander 完整的 node.js 命令行解决方案
 
 [![Build Status](https://github.com/tj/commander.js/workflows/build/badge.svg)](https://github.com/tj/commander.js/actions?query=workflow%3A%22build%22)
@@ -42,6 +44,8 @@ program.version('0.0.1');
 const program = new Command();
 program.version('0.0.1');
 ```
+--------
+### download-git-rep 从git拉取项目
 - [download-git-rep](https://www.npmjs.com/package/download-git-repo)download-git-rep 从git拉取项目
 [![GitLab pipeline](https://img.shields.io/gitlab/pipeline/flippidippi/download-git-repo)](https://gitlab.com/flippidippi/download-git-repo/builds)
 
@@ -57,7 +61,8 @@ download('flippidippi/download-git-repo-fixture', 'test/tmp', function (err) {
   console.log(err ? 'Error' : 'Success')
 })
 ```
-
+--------
+### fs操作扩展 fs-extr
 - [fs-extr]([https://](https://www.npmjs.com/package/fs-extra)) fs操作扩展
 
 [![npm Package](https://img.shields.io/npm/v/fs-extra.svg)](https://www.npmjs.org/package/fs-extra)
@@ -80,5 +85,5 @@ const  fs  =  require （'fs-extra' ）
 // 或者，如果您想清楚地表明自己正在使用fs-extra而不是fs，则可能需要这样命名您的fs变量fse
 const  fse  =  require （'fs-extra' ）
 ```
+--------
 
-### 哈哈哈
