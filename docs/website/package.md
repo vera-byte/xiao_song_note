@@ -42,16 +42,41 @@ program.version('0.0.1');
 const program = new Command();
 program.version('0.0.1');
 ```
-- [download-git-rep](https://)
+- [download-git-rep](https://www.npmjs.com/package/download-git-repo)download-git-rep 从git拉取项目
 [![GitLab pipeline](https://img.shields.io/gitlab/pipeline/flippidippi/download-git-repo)](https://gitlab.com/flippidippi/download-git-repo/builds)
 
 ``` sh
+# 安装
 npm install download-git-repo
 ```
 
 ``` javascript
+// 示例
 // 使用从master的Github存储库下载http
 download('flippidippi/download-git-repo-fixture', 'test/tmp', function (err) {
   console.log(err ? 'Error' : 'Success')
 })
+```
+
+- [fs-extr]([https://](https://www.npmjs.com/package/fs-extra)) fs操作扩展
+
+[![npm Package](https://img.shields.io/npm/v/fs-extra.svg)](https://www.npmjs.org/package/fs-extra)
+[![License](https://img.shields.io/npm/l/express.svg)](https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE)
+[![build status](https://img.shields.io/travis/jprichardson/node-fs-extra/master.svg)](http://travis-ci.org/jprichardson/node-fs-extra)
+[![windows Build status](https://img.shields.io/appveyor/ci/jprichardson/node-fs-extra/master.svg?label=windows%20build)](https://ci.appveyor.com/project/jprichardson/node-fs-extra/branch/master)
+[![downloads per month](http://img.shields.io/npm/dm/fs-extra.svg)](https://www.npmjs.org/package/fs-extra)
+[![Coverage Status](https://img.shields.io/coveralls/github/jprichardson/node-fs-extra/master.svg)](https://coveralls.io/github/jprichardson/node-fs-extra)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+``` sh
+npm install fs-extra
+```
+
+``` javascript
+// 使用
+const  fs  =  require （'fs' ） //不再需要
+// 您现在可以执行以下操作：
+const  fs  =  require （'fs-extra' ）
+// 或者，如果您想清楚地表明自己正在使用fs-extra而不是fs，则可能需要这样命名您的fs变量fse
+const  fse  =  require （'fs-extra' ）
 ```
