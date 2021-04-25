@@ -80,3 +80,5 @@ const  fs  =  require （'fs-extra' ）
 // 或者，如果您想清楚地表明自己正在使用fs-extra而不是fs，则可能需要这样命名您的fs变量fse
 const  fse  =  require （'fs-extra' ）
 ```
+
+### 哈哈哈
