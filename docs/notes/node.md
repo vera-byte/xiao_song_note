@@ -1,6 +1,5 @@
 # Node.js笔记
 ## Node.js和Npm版本升级到最新
-# Vscode快捷键
 <CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
 
 <template v-slot:mac>
