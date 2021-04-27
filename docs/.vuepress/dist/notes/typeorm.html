@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Egg笔记 | 全栈攻城狮</title>
+    <title>TypeORM笔记 | 全栈攻城狮</title>
     <meta name="generator" content="VuePress 1.8.2">
     <link rel="icon" href="/assets/img/logo.gif">
     <meta name="description" content="是全栈攻城狮呀">
-    <meta property="article:modified_time" content="null">
     <meta property="og:site_name" content="全栈攻城狮">
-    <meta property="og:title" content="Egg笔记">
+    <meta property="og:title" content="TypeORM笔记">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/egg/">
-    <meta name="twitter:title" content="Egg笔记">
-    <meta name="twitter:url" content="/egg/">
+    <meta property="og:url" content="/notes/typeorm.html">
+    <meta name="twitter:title" content="TypeORM笔记">
+    <meta name="twitter:url" content="/notes/typeorm.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="keywords" content="全栈笔记,vuepress,git,electron,vue,uniapp,coding,全栈工程师,小宋,">
     <meta name="author" content="全栈工程师小宋">
     
-    <link rel="preload" href="/assets/css/0.styles.0ea9ec4a.css" as="style"><link rel="preload" href="/assets/js/app.17408a61.js" as="script"><link rel="preload" href="/assets/js/2.5e289127.js" as="script"><link rel="preload" href="/assets/js/11.863e526a.js" as="script"><link rel="preload" href="/assets/js/3.134cdce2.js" as="script"><link rel="prefetch" href="/assets/js/10.c6842300.js"><link rel="prefetch" href="/assets/js/12.f3e1e718.js"><link rel="prefetch" href="/assets/js/13.c39ae9ee.js"><link rel="prefetch" href="/assets/js/14.c6364427.js"><link rel="prefetch" href="/assets/js/15.896fca01.js"><link rel="prefetch" href="/assets/js/16.8cb61c0f.js"><link rel="prefetch" href="/assets/js/17.3b21a8d1.js"><link rel="prefetch" href="/assets/js/18.7eff0ac1.js"><link rel="prefetch" href="/assets/js/19.25f515a9.js"><link rel="prefetch" href="/assets/js/20.0b1bd4e3.js"><link rel="prefetch" href="/assets/js/21.038e47a9.js"><link rel="prefetch" href="/assets/js/22.e6064936.js"><link rel="prefetch" href="/assets/js/23.df9e9766.js"><link rel="prefetch" href="/assets/js/24.83d83e76.js"><link rel="prefetch" href="/assets/js/25.5fbbc176.js"><link rel="prefetch" href="/assets/js/4.df9681b5.js"><link rel="prefetch" href="/assets/js/5.e0a0fda5.js"><link rel="prefetch" href="/assets/js/6.cf47de03.js"><link rel="prefetch" href="/assets/js/7.93656afc.js"><link rel="prefetch" href="/assets/js/8.e053df84.js"><link rel="prefetch" href="/assets/js/9.5a15916e.js">
+    <link rel="preload" href="/assets/css/0.styles.0ea9ec4a.css" as="style"><link rel="preload" href="/assets/js/app.17408a61.js" as="script"><link rel="preload" href="/assets/js/2.5e289127.js" as="script"><link rel="preload" href="/assets/js/18.7eff0ac1.js" as="script"><link rel="preload" href="/assets/js/3.134cdce2.js" as="script"><link rel="prefetch" href="/assets/js/10.c6842300.js"><link rel="prefetch" href="/assets/js/11.863e526a.js"><link rel="prefetch" href="/assets/js/12.f3e1e718.js"><link rel="prefetch" href="/assets/js/13.c39ae9ee.js"><link rel="prefetch" href="/assets/js/14.c6364427.js"><link rel="prefetch" href="/assets/js/15.896fca01.js"><link rel="prefetch" href="/assets/js/16.8cb61c0f.js"><link rel="prefetch" href="/assets/js/17.3b21a8d1.js"><link rel="prefetch" href="/assets/js/19.25f515a9.js"><link rel="prefetch" href="/assets/js/20.0b1bd4e3.js"><link rel="prefetch" href="/assets/js/21.038e47a9.js"><link rel="prefetch" href="/assets/js/22.e6064936.js"><link rel="prefetch" href="/assets/js/23.df9e9766.js"><link rel="prefetch" href="/assets/js/24.83d83e76.js"><link rel="prefetch" href="/assets/js/25.5fbbc176.js"><link rel="prefetch" href="/assets/js/4.df9681b5.js"><link rel="prefetch" href="/assets/js/5.e0a0fda5.js"><link rel="prefetch" href="/assets/js/6.cf47de03.js"><link rel="prefetch" href="/assets/js/7.93656afc.js"><link rel="prefetch" href="/assets/js/8.e053df84.js"><link rel="prefetch" href="/assets/js/9.5a15916e.js">
     <link rel="stylesheet" href="/assets/css/0.styles.0ea9ec4a.css">
   </head>
   <body>
@@ -32,7 +31,7 @@
   Uniapp
 </a></li><li class="dropdown-item"><!----> <a href="/electron/" class="nav-link">
   Electron
-</a></li><li class="dropdown-item"><!----> <a href="/egg/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-item"><!----> <a href="/egg/" class="nav-link">
   Egg
 </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Code Warehouse" class="dropdown-title"><span class="title">代码仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="Code Warehouse" class="mobile-dropdown-title"><span class="title">代码仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://runvera.coding.net/user/projects" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Coding
@@ -50,7 +49,7 @@
   Uniapp
 </a></li><li class="dropdown-item"><!----> <a href="/electron/" class="nav-link">
   Electron
-</a></li><li class="dropdown-item"><!----> <a href="/egg/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+</a></li><li class="dropdown-item"><!----> <a href="/egg/" class="nav-link">
   Egg
 </a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Code Warehouse" class="dropdown-title"><span class="title">代码仓库</span> <span class="arrow down"></span></button> <button type="button" aria-label="Code Warehouse" class="mobile-dropdown-title"><span class="title">代码仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://runvera.coding.net/user/projects" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Coding
@@ -58,7 +57,15 @@
   gitee
   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/metoyun" target="_blank" rel="noopener noreferrer" class="nav-link external">
   github
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Egg</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/egg/" aria-current="page" class="active sidebar-link">Egg笔记</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="egg笔记"><a href="#egg笔记" class="header-anchor">#</a> Egg笔记</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年4月20日下午4点47分</span></div></footer> <!----> </main></div><div class="global-ui"><!----><div></div><!----><!----><!----></div></div>
-    <script src="/assets/js/app.17408a61.js" defer></script><script src="/assets/js/2.5e289127.js" defer></script><script src="/assets/js/11.863e526a.js" defer></script><script src="/assets/js/3.134cdce2.js" defer></script>
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Notes</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/git.html" class="sidebar-link">Git</a></li><li><a href="/notes/git-webhook.html" class="sidebar-link">利用webhook实现自动化部署</a></li><li><a href="/notes/nginx.html" class="sidebar-link">Nginx笔记</a></li><li><a href="/notes/node.html" class="sidebar-link">Node.js笔记</a></li><li><a href="/notes/npm.html" class="sidebar-link">Npm笔记</a></li><li><a href="/notes/typeorm.html" aria-current="page" class="active sidebar-link">TypeORM笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/typeorm.html#typeorm反向生成数据库模型" class="sidebar-link">TypeORM反向生成数据库模型</a></li></ul></li><li><a href="/notes/vscode.html" class="sidebar-link">Vscode快捷键</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="typeorm笔记"><a href="#typeorm笔记" class="header-anchor">#</a> TypeORM笔记</h1> <h2 id="typeorm反向生成数据库模型"><a href="#typeorm反向生成数据库模型" class="header-anchor">#</a> TypeORM反向生成数据库模型</h2> <blockquote><h3 id="方式一-使用-typeorm-model-generator"><a href="#方式一-使用-typeorm-model-generator" class="header-anchor">#</a> 方式一 使用 <code>typeorm-model-generator</code></h3></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/npm.html" class="prev">
+        Npm笔记
+      </a></span> <span class="next"><a href="/notes/vscode.html">
+        Vscode快捷键
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div></div><!----><!----><!----></div></div>
+    <script src="/assets/js/app.17408a61.js" defer></script><script src="/assets/js/2.5e289127.js" defer></script><script src="/assets/js/18.7eff0ac1.js" defer></script><script src="/assets/js/3.134cdce2.js" defer></script>
   </body>
 </html>
