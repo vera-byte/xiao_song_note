@@ -1,5 +1,5 @@
 # TypeORM笔记
-## 数据库反向生成数据库TypeORM模型
+## 数据库反向生成TypeORM模型
 
 > ### 方式一 使用 ``` typeorm-model-generator ```
 >>typeorm-model-generator简单点就是将现有的数据库中的表使用命令的方式自动生成typeorm的数据模型(注意前提是数据库要有表)
