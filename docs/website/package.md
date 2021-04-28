@@ -11,7 +11,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/chalk/ansi-styles@8261697c95bf34b6c7767e2cbe9941a851d59385/screenshot.svg" width="900">
 
-``` sh
+``` shell
 # 安装
 npm i chalk
 ```
@@ -30,7 +30,7 @@ console.log(chalk.blue('Hello world!'));
 [![NPM Downloads](https://img.shields.io/npm/dm/commander.svg?style=flat)](https://npmcharts.com/compare/commander?minimal=true)
 [![Install Size](https://packagephobia.now.sh/badge?p=commander)](https://packagephobia.now.sh/result?p=commander)
 
-``` sh
+``` shell
 # 安装
     npm i commander
 ```
@@ -49,7 +49,7 @@ program.version('0.0.1');
 - [download-git-rep](https://www.npmjs.com/package/download-git-repo)download-git-rep 从git拉取项目
 [![GitLab pipeline](https://img.shields.io/gitlab/pipeline/flippidippi/download-git-repo)](https://gitlab.com/flippidippi/download-git-repo/builds)
 
-``` sh
+``` shell
 # 安装
 npm install download-git-repo
 ```
@@ -73,7 +73,7 @@ download('flippidippi/download-git-repo-fixture', 'test/tmp', function (err) {
 [![Coverage Status](https://img.shields.io/coveralls/github/jprichardson/node-fs-extra/master.svg)](https://coveralls.io/github/jprichardson/node-fs-extra)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-``` sh
+``` shell
 npm install fs-extra
 ```
 
@@ -90,7 +90,7 @@ const  fse  =  require （'fs-extra' ）
 ### handlebars 模板引擎
 - [handlebars]()handlebars 模板引擎
 
-``` sh 
+``` shell 
 # 安装
 npm install handlebars
 ```
@@ -101,7 +101,7 @@ npm install handlebars
 
 ### inquirer 命令行交互
 - [inquirer]()inquirer 命令行交互
-``` sh
+``` shell
 # 安装
 npm install inquirer
 ```
@@ -113,7 +113,7 @@ npm install inquirer
 ### log-symbols 日志输出
 - [log-symbols]()log-symbols 日志输出
 
-``` sh
+``` shell
 # 安装
 npm install log-symbols
 ```
@@ -125,7 +125,7 @@ npm install log-symbols
 ### ora 加载效果 图标
 - [ora]()ora 加载效果 图标
 
-``` sh
+``` shell
 # 安装
 npm install ora
 ```
@@ -136,7 +136,7 @@ npm install ora
 ### validate-npm-package-name 检验npm名字取的对不对
 - [validate-npm-package-name]()validate-npm-package-name 检验npm名字取的对不对
 
-``` sh
+``` shell
 # 安装
 npm install validate-npm-package-name
 ```

@@ -5,7 +5,7 @@
 ## 全局安装 vue-cli 3.x（如已安装请跳过此步骤）
 
 
-``` sh
+``` shell
 
 npm install -g @vue/cli
 
@@ -13,7 +13,7 @@ npm install -g @vue/cli
 
 ## 通过 CLI 创建 uni-app 项目
 
-``` sh
+``` shell
 
 vue create -p dcloudio/uni-preset-vue 项目名
 

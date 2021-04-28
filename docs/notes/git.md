@@ -5,7 +5,7 @@
 
 ## 准备多个仓库地址
 
-``` sh
+``` shell
 
 GitHub 仓库地址
 Gitee 仓库地址
@@ -16,7 +16,7 @@ GitLab 仓库地址
 
 ## 主仓库
 
-``` sh
+``` shell
 
 把GitHub上的库添加为默认远程库，这一步和一般操作没啥区别
 
@@ -26,7 +26,7 @@ git remote add origin 仓库地址
 
 ## 备份仓库
 
-``` shll
+``` shellll
 
 备份库只push(提交)，不pull
 

@@ -4,7 +4,7 @@
 
 <template v-slot:mac>
 
- ``` sh
+``` shell
     #1.，先查看本机node.js版本：
     node --version
     #2.，清除node.js的cache：

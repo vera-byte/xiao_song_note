@@ -39,7 +39,7 @@ npm i -g typeorm-model-generator
 }
 ```
 5. 直接运行命令就可以在entities文件夹下生成全部的数据模型(目前格式有点丑,需要自己手动调整下)
-``` sh 
+``` shell 
 npn run db 
 ```
 6. 如果成功,则会在package.json同级目录可以看到entities文件夹
