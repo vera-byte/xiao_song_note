@@ -60,7 +60,7 @@ module.exports = {
                     },
                     {
                         text: 'Uniapp',
-                        link: '/uniapp/'
+                        link: '/uniapp/index.html'
                     },
                     {
                         text: 'Electron',
