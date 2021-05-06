@@ -1,4 +1,5 @@
 # uniapp笔记
+----------------
 ## 使用Vscode创建Uniapp项目
 
 ### CLI 工程
@@ -19,6 +20,7 @@ vue create -p dcloudio/uni-preset-vue 项目名
 
 ```
 
+-------
 
 # Uniapp引入字体文件
 
