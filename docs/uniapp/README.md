@@ -20,7 +20,7 @@ vue create -p dcloudio/uni-preset-vue 项目名
 ```
 
 
-## Uniapp引入字体文件
+# Uniapp引入字体文件
 
 1.  打开 [transfonter](https://transfonter.org/) 将你的字体文件生成出多种格式的字体包，以便兼容各种平台
 2.  生成后下载```@font-face套件``` 
