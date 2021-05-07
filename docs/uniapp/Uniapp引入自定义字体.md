@@ -6,9 +6,9 @@
 3.  解压字体套件压缩包
 4.  将字体文件导入到项目下的```static```文件目录下
 5.  将压缩包里的css文件复制到你的项目，代码如下
-<CodeSwitcher :languages="{file:'字体文件',base64:'Base64编码'}">
+<CodeSwitcher :languages="{1:'字体文件',2:'Base64编码'}">
 
-<template v-slot:file>
+<template v-slot:1>
 
     ``` css
   //将路径改成你的字体文件目录
@@ -31,7 +31,7 @@
 ```
 
 </template>
-<template v-slot:base64>
+<template v-slot:2>
 
 ``` css
 
