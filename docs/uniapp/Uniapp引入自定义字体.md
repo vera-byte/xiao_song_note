@@ -31,6 +31,7 @@
 ```
 
 </template>
+
 <template v-slot:2>
 
 ``` css
@@ -56,7 +57,32 @@
 </template>
 </CodeSwitcher>
 
-1. 全局引入，在App.vue 引入css
+<CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
+
+<template v-slot:mac>
+ <iframe  
+style="padding-top: 15px;height: 1700px;"
+ width=100% 
+ src="/html/vscode/mac.html"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+</template>
+<template v-slot:win>
+
+ <iframe  
+ style="padding-top: 15px;height: 1700px;"
+ width=100% 
+ src="/html/vscode/windows.html"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
+
+</template>
+
+</CodeSwitcher>
+
+6. 全局引入，在App.vue 引入css
 ``` css 
 <style >
 @import "static/css/index.css";
