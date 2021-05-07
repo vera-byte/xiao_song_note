@@ -8,3 +8,9 @@
  frameborder=0  
  allowfullscreen>
  </iframe>
+
+ <style scope>
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+ <style>
