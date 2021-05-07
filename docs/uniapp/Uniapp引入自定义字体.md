@@ -5,10 +5,10 @@
 2.  生成后下载```@font-face套件``` 
 3.  解压字体套件压缩包
 4.  将字体文件导入到项目下的```static```文件目录下
-5.  将压缩包里的css文件复制到你的项目，代码如下
+5.  将压缩包里的css文件复制到你的项目, 代码如下
 
-
-<CodeSwitcher :languages="{file:'字体文件',base64:'Base64编码'}">
+> 建议使用Base64,更好的兼容各个平台 ,小程序平台不支持引入本地资源
+<CodeSwitcher :languages="{base64:'Base64编码',file:'字体文件',}">
 
 <template v-slot:file>
  
