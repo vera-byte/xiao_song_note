@@ -61,7 +61,8 @@
 
 <template v-slot:mac>
  
-    ``` css
+``` css
+
   //将路径改成你的字体文件目录
   @font-face {
     font-family: 'DIN Alternate';
