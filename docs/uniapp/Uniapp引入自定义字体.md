@@ -60,23 +60,48 @@
 <CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
 
 <template v-slot:mac>
- <iframe  
-style="padding-top: 15px;height: 1700px;"
- width=100% 
- src="/html/vscode/mac.html"  
- frameborder=0  
- allowfullscreen>
- </iframe>
+ 
+    ``` css
+  //将路径改成你的字体文件目录
+  @font-face {
+    font-family: 'DIN Alternate';
+    src: url('~@/static/fonts/DINAlternate-Bold.woff2') format('woff2'),
+      url('~@/static/fonts/DINAlternate-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+  //设置一个class名使用此字体
+  .DIN_Alternate_Bold {
+    font-family: 'DIN Alternate' !important;
+    font-style: normal;
+  }
+
+```
 </template>
 <template v-slot:win>
 
- <iframe  
- style="padding-top: 15px;height: 1700px;"
- width=100% 
- src="/html/vscode/windows.html"  
- frameborder=0  
- allowfullscreen>
- </iframe>
+ ``` css
+
+//需要在transfonter转换时勾选Base64 encode
+  @font-face {
+    font-family: 'DIN Alternate';
+    src: url('data:font/woff2;charset=utf-8;base64,·····') format('woff2'),
+      url('data:font/woff2;charset=utf-8;base64,····') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //设置一个class名使用此字体
+  .DIN_Alternate_Bold {
+    font-family: 'DIN Alternate' !important;
+    font-style: normal;
+  }
+
+```
 
 </template>
 
