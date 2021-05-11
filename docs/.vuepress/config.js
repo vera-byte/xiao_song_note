@@ -73,6 +73,16 @@ module.exports = {
                 ],
             },
             {
+                text: '内部项目',
+                ariaLabel: 'Code Warehouse',
+                items: [{
+                        text: 'XXX',
+                        link: 'https://runvera.coding.net/user/projects'
+                    },
+
+                ]
+            },
+            {
                 text: '代码仓库',
                 ariaLabel: 'Code Warehouse',
                 items: [{
