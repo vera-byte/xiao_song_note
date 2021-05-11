@@ -73,14 +73,9 @@ module.exports = {
                 ],
             },
             {
-                text: '内部项目',
-                ariaLabel: 'Code Warehouse',
-                items: [{
-                        text: 'XXX',
-                        link: 'https://runvera.coding.net/user/projects'
-                    },
-
-                ]
+                text: '私有项目',
+                link: '/Vera/',
+                ariaLabel: '私有项目',
             },
             {
                 text: '代码仓库',
