@@ -63,6 +63,10 @@ module.exports = {
                         link: '/uniapp/uniapp'
                     },
                     {
+                        text: 'Flutter',
+                        link: '/flutter/'
+                    },
+                    {
                         text: 'Electron',
                         link: '/electron/'
                     },
