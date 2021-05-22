@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 14:03:38
- * @LastEditTime: 2021-05-21 17:11:21
+ * @LastEditTime: 2021-05-22 20:59:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/xiaosong_notes/docs/.vuepress/config/nav.js
@@ -24,6 +24,10 @@ module.exports = [{
       {
         text: 'Uniapp',
         link: '/uniapp/uniapp'
+      },
+      {
+        text: 'JavaScript',
+        link: '/js/'
       },
       {
         text: 'Flutter',
