@@ -1,11 +1,6 @@
-<!--
- * @Author: your name
- * @Date: 2021-05-21 15:19:29
- * @LastEditTime: 2021-05-21 16:49:01
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /note/xiaosong_notes/docs/notes/vscode.md
--->
+---
+title: "Vscode快捷键"
+---
 # Vscode快捷键
 <CodeSwitcher :languages="{mac:'MacOs',win:'Windows'}">
 
