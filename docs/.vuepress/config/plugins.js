@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 13:43:21
- * @LastEditTime: 2021-06-11 20:58:24
+ * @LastEditTime: 2021-06-11 21:16:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/plugins.js
@@ -9,16 +9,16 @@
 
 module.exports = [
     // docs https://antdocs.vercel.app/plugin/
-    // ['homebadge', {
-    //     selector: '.hero',
-    //     repoLink: 'https://github.com/metoyun/xiao_song_note',
-    //     badgeLink: 'https://img.shields.io/github/stars/metoyun/xiao_song_note',
-    //     badgeGroup: [
-    //         'https://img.shields.io/github/forks/metoyun/xiao_song_note',
-    //         'https://img.shields.io/github/issues/metoyun/xiao_song_note',
-    //         'https://img.shields.io/github/stars/metoyun/xiao_song_note',
-    //     ]
-    // }],
+    ['homebadge', {
+        // selector: '.hero',
+        // repoLink: 'https://github.com/metoyun/xiao_song_note',
+        // badgeLink: 'https://img.shields.io/github/stars/metoyun/xiao_song_note',
+        // badgeGroup: [
+        //     'https://img.shields.io/github/forks/metoyun/xiao_song_note',
+        //     'https://img.shields.io/github/issues/metoyun/xiao_song_note',
+        //     'https://img.shields.io/github/stars/metoyun/xiao_song_note',
+        // ]
+    }],
     // [
     //     'vuepress-plugin-mygitalk', {
     //         // 是否启用(关闭请设置为false)(default: true)

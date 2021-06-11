@@ -8278,8 +8278,8 @@ vuepress-plugin-container@^2.0.2:
 
 vuepress-plugin-homebadge@^0.1.0:
   version "0.1.0"
-  resolved "https://registry.nlark.com/vuepress-plugin-homebadge/download/vuepress-plugin-homebadge-0.1.0.tgz#940022dfe0f0c4da28f139afba34595a8d62e0d5"
-  integrity sha1-lAAi3+DwxNoo8TmvujRZWo1i4NU=
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-homebadge/-/vuepress-plugin-homebadge-0.1.0.tgz#940022dfe0f0c4da28f139afba34595a8d62e0d5"
+  integrity sha512-Uy5FMRHwBdYtTtvjTkheRZUqciJviwylihecllutCpjKDTjQtj+rP7r5ra9bflBgQ/JjM0EULSQvWm5qwtqI9Q==
 
 vuepress-plugin-mygitalk@^1.0.5:
   version "1.0.5"
