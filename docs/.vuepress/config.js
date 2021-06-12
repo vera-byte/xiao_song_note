@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 14:03:38
- * @LastEditTime: 2021-05-21 16:43:31
+ * @LastEditTime: 2021-06-12 13:25:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /note/xiaosong_notes/docs/.vuepress/config.js
+ * @FilePath: /note/docs/.vuepress/config.js
  */
 module.exports = {
   title: "全栈攻城狮",
@@ -57,21 +57,21 @@ module.exports = {
     repo: "https://github.com/metoyun/xiao_song_note",
     editLinks: false,
     ads: {
-      style: 2,
-      image: "https://www.rainyun.com/img/rainyun.png",
-      text: "免费又稳定，签到换延期，来试试雨云主机...",
-      link: "http://redirect.rainyun.cn/?ref=11126",
-      items: [{
-          text: "点击链接快来和我一起加入语雀文档，体验全新知识创作，让你的协作更高效！",
-          image: "https://s1.ax1x.com/2020/04/06/GsL0Z6.md.png",
-          link: "https://www.yuque.com/register?invite_token=f44225123bcab02038f11cc0a7ab720cb9016a02bec6a30f5e10994a9946152a"
-        },
-        {
-          text: "免费又稳定，签到换延期，来试试雨云主机吧！",
-          image: "https://s1.ax1x.com/2020/04/06/GsvilQ.md.png",
-          link: "http://redirect.rainyun.cn/?ref=11126"
-        }
-      ]
+      // style: 2,
+      // image: "https://www.rainyun.com/img/rainyun.png",
+      // text: "免费又稳定，签到换延期，来试试雨云主机...",
+      // link: "http://redirect.rainyun.cn/?ref=11126",
+      // items: [{
+      //     text: "点击链接快来和我一起加入语雀文档，体验全新知识创作，让你的协作更高效！",
+      //     image: "https://s1.ax1x.com/2020/04/06/GsL0Z6.md.png",
+      //     link: "https://www.yuque.com/register?invite_token=f44225123bcab02038f11cc0a7ab720cb9016a02bec6a30f5e10994a9946152a"
+      //   },
+      //   {
+      //     text: "免费又稳定，签到换延期，来试试雨云主机吧！",
+      //     image: "https://s1.ax1x.com/2020/04/06/GsvilQ.md.png",
+      //     link: "http://redirect.rainyun.cn/?ref=11126"
+      //   }
+      // ]
     }
   },
   // configureWebpack: (config, isServer) => {
