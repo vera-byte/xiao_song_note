@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 13:43:21
- * @LastEditTime: 2021-06-11 21:18:27
+ * @LastEditTime: 2021-06-13 16:18:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/plugins.js
@@ -78,5 +78,14 @@ module.exports = [
             }
         }
     ],
+    [
+        ['@vuepress-reco/comments', {
+            solution: 'valine',
+            options: {
+                appId: 'VRYeccxVEoiadxr7mDyvVWqb-gzGzoHsz', // your appId
+                appKey: '9RAeRVudhPXnWixjzfWw7atQ' // your appKey
+            }
+        }]
+    ]
 
 ]
