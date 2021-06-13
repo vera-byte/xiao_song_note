@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 14:03:38
- * @LastEditTime: 2021-06-13 16:22:56
+ * @LastEditTime: 2021-06-13 16:28:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/nav.js
@@ -40,9 +40,6 @@ module.exports = [{
       {
         text: 'Egg',
         link: '/egg/'
-      }, {
-        text: '留言板',
-        link: '/messageboard'
       }
     ]
   },
