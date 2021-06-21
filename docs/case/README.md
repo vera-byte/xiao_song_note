@@ -1,9 +1,10 @@
 ---
-title: 网址收录
+title: 收录
 ---
 
 <h1 style="text-align:center">收录一些优秀网站</h1>   
- 
+
+
 <a-row :gutter="[32,32]">
 	<Card 
 		cover="https://s1.ax1x.com/2020/10/07/0dP9bV.md.png" 
@@ -23,8 +24,8 @@ title: 网址收录
 		title="攻城狮老李" 
 		author="李栋" 
 	/>
-	
 </a-row>
+
 
 <style>
 .ant-card-hoverable{
