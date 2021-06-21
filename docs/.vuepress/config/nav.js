@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 14:03:38
- * @LastEditTime: 2021-06-13 16:28:04
+ * @LastEditTime: 2021-06-22 01:04:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/nav.js
@@ -40,6 +40,10 @@ module.exports = [{
       {
         text: 'Egg',
         link: '/egg/'
+      },
+      {
+        text: 'CoocsCreator游戏引擎',
+        link: '/coocscreator/'
       }
     ]
   },
