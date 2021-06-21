@@ -17,8 +17,7 @@ const query = uni.createSelectorQuery().in(this);
 
 
     // 打印出的结果
-    bottom: 45
-​
+    // bottom: 45
     // dataset: Object {  }
     // height: 45
     // id: ""
