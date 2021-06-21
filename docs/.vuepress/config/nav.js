@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 14:03:38
- * @LastEditTime: 2021-06-22 01:07:01
+ * @LastEditTime: 2021-06-22 01:27:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/nav.js
@@ -48,7 +48,11 @@ module.exports = [{
     ]
   },
   {
-    text: '私有项目',
+    text: '开源项目',
     link: '/Vera/'
+  },
+  {
+    text: '收录',
+    link: '/case/'
   },
 ];
