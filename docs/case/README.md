@@ -14,52 +14,16 @@ title: AntDocs 主题优秀案例
 		author="作者：xieyezi" 
 	/>
 	<Card 
-		cover="https://s1.ax1x.com/2020/10/07/0dPPET.md.png" 
-		link="https://dokimod.cn" 
-		title="DokiMod" 
-		author="作者：imgradeone" 
+		cover="https://www.cocos.com/wp-content/themes/cocos/image/logo.png" 
+		link="https://www.cocos.com/" 
+		title="游戏开发引擎" 
+		author="" 
 	/>
 	<Card 
-		cover="https://s1.ax1x.com/2020/03/22/85ELOx.md.png" 
-		link="https://luban.now.sh/" 
-		title="Luban" 
-		author="作者：LeapFE" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0wCUe.md.png" 
-		link="https://www.aaaimx.org/software/" 
-		title="SOFTWARE" 
-		author="作者：disoftw" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0DSbV.md.png" 
-		link="http://dipiper.tech/" 
-		title="dipiper" 
-		author="作者：andyesfly" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0yk8g.md.png" 
-		link="https://artiely.gitee.io/scroll-docs/" 
-		title="Tulip-scroll" 
-		author="作者：artiely" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0TXuV.md.png" 
-		link="https://xieyezi.github.io/" 
-		title="xieyezi" 
-		author="作者：xieyezi" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0HWTS.md.png" 
-		link="https://lq782655835.github.io/yi-ui/" 
-		title="yi-ui轻量级组件库" 
-		author="lq782655835" 
-	/>
-	<Card 
-		cover="https://s1.ax1x.com/2020/05/14/Y0qaPe.md.png" 
-		link="http://wangfanghua.gitee.io/elegance-ui/" 
-		title="Elegance-UI Color" 
-		author="wangly19" 
+		cover="http://lidong.xin/hero.jpeg" 
+		link="http://lidong.xin/" 
+		title="攻城狮老李" 
+		author="李栋" 
 	/>
 </a-row>
 
