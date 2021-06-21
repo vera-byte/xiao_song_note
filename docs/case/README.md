@@ -1,8 +1,8 @@
 ---
-title: AntDocs 主题优秀案例
+title: 收录
 ---
 
-<h1 style="text-align:center">AntDocs 主题优秀案例</h1>   
+<h1 style="text-align:center">收录一些优秀网站</h1>   
 
 <div>欢迎各大站长申请入驻「AntDocs 主题优秀案例」，我们将长期审核收录 AntDocs 主题优秀案例，你的作品将有几率出现在 AntDocs 官方文档上哦！让更多人发现你的站点吧！</div> 
 <p>&emsp;</p>   
@@ -14,7 +14,7 @@ title: AntDocs 主题优秀案例
 		author="作者：xieyezi" 
 	/>
 	<Card 
-		cover="https://www.cocos.com/wp-content/themes/cocos/image/logo.png" 
+		cover="https://download.cocos.com/CocosUdc/promotion/545117011ade011859351d846fc7a518.jpg" 
 		link="https://www.cocos.com/" 
 		title="游戏开发引擎" 
 		author="" 
