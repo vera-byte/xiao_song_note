@@ -2,7 +2,7 @@
 title: 收录
 ---
 
-<h1 style="text-align:center">收录一些优秀网站</h1>   
+<h1 style="text-align:center">收录一些优秀网站1</h1>   
 
 
 <a-row :gutter="[32,32]">
