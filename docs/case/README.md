@@ -17,6 +17,12 @@ title: 网址收录
 		title="游戏开发引擎" 
 		author="" 
 	/>
+	<Card 
+		cover="http://lidong.xin/hero.jpeg" 
+		link="http://lidong.xin/" 
+		title="攻城狮老李" 
+		author="李栋" 
+	/>
 	
 </a-row>
 
