@@ -2,6 +2,9 @@
 title: Nginx笔记
 ---
 
+
+> 修改Nginx记得重启Nginx
+
 # Nginx代理
 ```conf
 location /admin/ #代理名称
