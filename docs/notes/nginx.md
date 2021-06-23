@@ -46,3 +46,39 @@ location /admin/ #代理名称
      
      }
 ```
+
+# Nginx自定义日志
+``` conf
+# mylog 自定义日志名称
+log_format  mylog  
+        '----------------------------------------------------------------------------------------------------------------------------
+        |请求IP:             $remote_addr                    
+        |户端用户名称:          $remote_user                  
+        |标准格式下的本地时间:      $time_iso8601               
+        |请求协议:               $request                    
+        |状态:                  $status                      
+        |发送给客户端的字节数:      $body_bytes_sent            
+        |记录从哪个页面链接访问过来的:  $http_referer            
+        |记录客户端浏览器相关信息:      $http_user_agent         
+        |(反向)记录客户端IP地址: "  $http_x_forwarded_for       
+        |未知字段:              $gzip_ratio                  
+        |发送给客户端的总字节数: $request_time                 
+        |未知字段:              $bytes_sent                  
+        |请求的长度:            $request_length              
+        |日志写入时间:           $msec                        
+        ----------------------------------------------------------------------------------------------------------------------------'
+
+
+```
+# 使用自定义日志
+
+``` conf
+
+server
+    {
+        # 将mylog 放到后面
+        access_log  /www/wwwlogs/access.log mylog;
+    }
+
+
+```
