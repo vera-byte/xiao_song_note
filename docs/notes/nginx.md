@@ -60,7 +60,7 @@ log_format  mylog
         |发送给客户端的字节数:      $body_bytes_sent            
         |记录从哪个页面链接访问过来的:  $http_referer            
         |记录客户端浏览器相关信息:      $http_user_agent         
-        |(反向)记录客户端IP地址: "  $http_x_forwarded_for       
+        |(反向)记录客户端IP地址:   $http_x_forwarded_for       
         |未知字段:              $gzip_ratio                  
         |发送给客户端的总字节数: $request_time                 
         |未知字段:              $bytes_sent                  
