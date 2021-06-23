@@ -3,7 +3,7 @@ title: Nginx笔记
 ---
 
 # Nginx代理
-```ini
+```conf
 location /admin/ #代理名称
     {
         proxy_pass ip或域名;
