@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 13:43:21
- * @LastEditTime: 2021-06-13 16:18:27
+ * @LastEditTime: 2021-06-24 23:56:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/.vuepress/config/plugins.js
@@ -69,15 +69,15 @@ module.exports = [
     'blog-multidir',
     // 代码块多语言切换
     ['code-switcher'],
-    [
-        '@vuepress/pwa', {
-            serviceWorker: true,
-            updatePopup: {
-                message: "有新的内容更新",
-                buttonText: "刷新"
-            }
-        }
-    ],
+    // [
+    //     '@vuepress/pwa', {
+    //         serviceWorker: true,
+    //         updatePopup: {
+    //             message: "有新的内容更新",
+    //             buttonText: "刷新"
+    //         }
+    //     }
+    // ],
     [
         ['@vuepress-reco/comments', {
             solution: 'valine',
