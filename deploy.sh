@@ -2,10 +2,10 @@
 ###
  # @Author: your name
  # @Date: 2021-05-21 16:22:32
- # @LastEditTime: 2021-05-21 16:23:12
- # @LastEditors: your name
+ # @LastEditTime: 2021-06-24 15:04:24
+ # @LastEditors: Please set LastEditors
  # @Description: In User Settings Edit
- # @FilePath: /note/xiaosong_notes/deploy.sh
+ # @FilePath: /note/deploy.sh
 ### 
 # 确保脚本抛出遇到的错误
 set -e
@@ -28,7 +28,7 @@ git push -u origin master
 
 echo "🤤$(date +'%Y-%m-%d %H:%M:%S')|开始到生产环境部署"
 
-res=$(curl http://bt.metoyun.com:8888/hook?access_key=qUiYRYHR26YvmMZz7jxvDiDLfaOxmVKmHID4XticOUcEg0yk&param=aaa)
+res=$(curl http://bt.metoyun.com:8800/hook?access_key=3sShKfntwHBrrfzo8XsRPiIaxqFR2f1icvtLNDgOX3bS30gC&param=aaa)
 
 echo "😯-------发送WebHook-------"
 
