@@ -22,4 +22,3 @@ $('html').css('font-size', rem + "px");
 
 
 ```
-123
