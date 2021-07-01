@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 15:23:56
- * @LastEditTime: 2021-06-11 16:35:37
+ * @LastEditTime: 2021-07-01 12:35:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/notes/sidebar_contents.js
@@ -14,5 +14,6 @@ module.exports = [
 	"npm",
 	"typeorm",
 	"vscode",
-	"brew"
+	"brew",
+	"frp"
 ];
