@@ -44,3 +44,4 @@ npn run db
 ```
 6. 如果成功,则会在package.json同级目录可以看到entities文件夹
 
+## typeOrm 数据类型 [官网](https://github.com/typeorm/typeorm/blob/master/docs/entities.md#column-types)
