@@ -21,6 +21,8 @@ title: 文档注释
 @final 指示一个值是常量值。要记住JavaScript无法真正保证一个值是常量
 @ignore JSDoc忽略有这个标记的函数
 
+
+```
 ## example
 ``` js
 /**
