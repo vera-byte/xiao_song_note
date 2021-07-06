@@ -48,6 +48,6 @@ git clone https://e.coding.net/runvera/verauniapp/VeraUniapp.git
 body{
     width:100%;
     height:100%;
-    background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F2c17bc8a500b057ab765e67c6cad8220264b04c39232-zN8FGR_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628179418&t=567c708d8d888c1f9cee99d60dd21c3f")
+    background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F53%2F62%2F195afd80f43f1c2.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628179926&t=52fa6c7cc41c13a912c7c9b0a23763e2")
 }
 </style>
