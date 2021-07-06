@@ -1,7 +1,7 @@
 ---
 title:  "VeraUniapp"
 ---
-<body >
+
 # VeraUniapp
 
 
@@ -44,8 +44,7 @@ git clone https://e.coding.net/runvera/verauniapp/VeraUniapp.git
 
 ```
 
-</div>
-<style lang="scss" scoped>
+<style  scoped>
 body{
     background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F00%2F92%2F80%2F58dc579f50aef_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628178877&t=6408d6bb3299f8e6b16db0da2d75ff34")
 }
