@@ -1,4 +1,10 @@
 ---
-title:  "私有项目"
+title:  "VeraUniapp介绍"
 ---
-# 私有项目
+# 安装
+``` sh
+
+# 克隆
+git clone https://e.coding.net/runvera/verauniapp/VeraUniapp.git
+
+```
