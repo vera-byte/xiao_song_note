@@ -44,10 +44,3 @@ git clone https://e.coding.net/runvera/verauniapp/VeraUniapp.git
 
 ```
 
-<style>
-body{
-    width:100%;
-    height:100%;
-    background:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F53%2F62%2F195afd80f43f1c2.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628179926&t=52fa6c7cc41c13a912c7c9b0a23763e2")
-}
-</style>
