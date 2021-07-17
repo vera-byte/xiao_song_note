@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>openssl | 全栈攻城狮</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/logo.gif">
+    <script type="text/javascript" src="/assets/js/push.js"></script>
+    <meta name="description" content="欢迎来到全栈攻城狮的分享集">
+    <meta property="og:site_name" content="全栈攻城狮">
+    <meta property="og:title" content="openssl">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/notes/openssl.html">
+    <meta name="twitter:title" content="openssl">
+    <meta name="twitter:url" content="/notes/openssl.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="referrer" content="never">
+    <meta name="keywords" content="全栈笔记,vuepress,git,electron,vue,uniapp,coding,全栈工程师,小宋,antdocs,antdeisgn,vuepress,vuepress-theme,theme,ant,docs,antd,antdocs of vuepress,主题,vuepress主题,antd设计,blog,vuepress-blog">
+    <link rel="preload" href="/assets/css/0.styles.778863b0.css" as="style"><link rel="preload" href="/assets/js/app.b39ed7dd.js" as="script"><link rel="preload" href="/assets/js/2.e0e877e7.js" as="script"><link rel="preload" href="/assets/js/37.238a51b7.js" as="script"><link rel="prefetch" href="/assets/js/10.fb64d3b7.js"><link rel="prefetch" href="/assets/js/11.81f426c9.js"><link rel="prefetch" href="/assets/js/12.69334f7f.js"><link rel="prefetch" href="/assets/js/13.1efab576.js"><link rel="prefetch" href="/assets/js/14.bdccfa85.js"><link rel="prefetch" href="/assets/js/15.41f0372e.js"><link rel="prefetch" href="/assets/js/16.c02720b9.js"><link rel="prefetch" href="/assets/js/17.1f502160.js"><link rel="prefetch" href="/assets/js/18.d0fb8c6d.js"><link rel="prefetch" href="/assets/js/19.cb97df09.js"><link rel="prefetch" href="/assets/js/20.fb4f79e4.js"><link rel="prefetch" href="/assets/js/21.b2ac0c09.js"><link rel="prefetch" href="/assets/js/22.33304e5e.js"><link rel="prefetch" href="/assets/js/23.7229b39e.js"><link rel="prefetch" href="/assets/js/24.870946fa.js"><link rel="prefetch" href="/assets/js/25.169d0391.js"><link rel="prefetch" href="/assets/js/26.8cac1989.js"><link rel="prefetch" href="/assets/js/27.6b6dddca.js"><link rel="prefetch" href="/assets/js/28.8e1ad164.js"><link rel="prefetch" href="/assets/js/29.fc31f078.js"><link rel="prefetch" href="/assets/js/3.bff12e04.js"><link rel="prefetch" href="/assets/js/30.55b762d3.js"><link rel="prefetch" href="/assets/js/31.b1b29588.js"><link rel="prefetch" href="/assets/js/32.9443ac38.js"><link rel="prefetch" href="/assets/js/33.63e7d8b4.js"><link rel="prefetch" href="/assets/js/34.08db5049.js"><link rel="prefetch" href="/assets/js/35.7a45cde9.js"><link rel="prefetch" href="/assets/js/36.8e6e3023.js"><link rel="prefetch" href="/assets/js/38.8afd6c00.js"><link rel="prefetch" href="/assets/js/39.aa05cadc.js"><link rel="prefetch" href="/assets/js/4.ebcdd46a.js"><link rel="prefetch" href="/assets/js/40.3790f934.js"><link rel="prefetch" href="/assets/js/41.117b60b5.js"><link rel="prefetch" href="/assets/js/42.362b40bf.js"><link rel="prefetch" href="/assets/js/43.094756e9.js"><link rel="prefetch" href="/assets/js/44.7c04629b.js"><link rel="prefetch" href="/assets/js/45.b916816e.js"><link rel="prefetch" href="/assets/js/46.daecfc18.js"><link rel="prefetch" href="/assets/js/47.a945136b.js"><link rel="prefetch" href="/assets/js/48.205d298f.js"><link rel="prefetch" href="/assets/js/49.c200bbb9.js"><link rel="prefetch" href="/assets/js/5.98b869c5.js"><link rel="prefetch" href="/assets/js/50.40b01c10.js"><link rel="prefetch" href="/assets/js/51.17fe74b8.js"><link rel="prefetch" href="/assets/js/52.4b222793.js"><link rel="prefetch" href="/assets/js/53.7c0982bb.js"><link rel="prefetch" href="/assets/js/6.eb4c7392.js"><link rel="prefetch" href="/assets/js/7.d0ba62d3.js"><link rel="prefetch" href="/assets/js/8.34dd9047.js"><link rel="prefetch" href="/assets/js/9.8c5944c7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.778863b0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="nav-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/" class="router-link-active home-link"><img src="/assets/logo.gif" alt="全栈攻城狮" class="logo"> <span class="site-name">全栈攻城狮</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/" class="router-link-active">
+          首页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/notes/git.html">
+          日常笔记
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          专题笔记
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          开源项目
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/case/">
+          收录
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <a href="https://github.com/metoyun/xiao_song_note" target="_blank" rel="noopener noreferrer" class="repo-link"><i aria-label="icon: github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></i></a></nav></div></div> <!----></header> <aside class="sidebar"><div><div class="promo"><div id="promo_3"><div class="promo_title">Sponsor</div> <button type="button" class="ant-btn ant-btn-primary ant-btn-background-ghost"><span>Become a Sponsor</span></button></div></div> <div role="separator" id="reset-margin" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div></div> <ul class="sidebar-links"><li><a href="/notes/git-webhook.html" title="利用webhook实现自动化部署" class="sidebar-link">利用webhook实现自动化部署</a></li><li><a href="/notes/git.html" title="Git" class="sidebar-link">Git</a></li><li><a href="/notes/nginx.html" title="Nginx笔记" class="sidebar-link">Nginx笔记</a></li><li><a href="/notes/node.html" title="Node.js笔记" class="sidebar-link">Node.js笔记</a></li><li><a href="/notes/npm.html" title="Npm笔记" class="sidebar-link">Npm笔记</a></li><li><a href="/notes/typeorm.html" title="TypeORM笔记" class="sidebar-link">TypeORM笔记</a></li><li><a href="/notes/vscode.html" title="Vscode快捷键" class="sidebar-link">Vscode快捷键</a></li><li><a href="/notes/brew.html" title="mac安装brew" class="sidebar-link">mac安装brew</a></li><li><a href="/notes/frp.html" title="Frps服务端/Frp客户端" class="sidebar-link">Frps服务端/Frp客户端</a></li><li><a href="/notes/openssl.html" aria-current="page" title="openssl" class="active sidebar-link">openssl</a></li><li><a href="/notes/ssh.html" title="ssh" class="sidebar-link">ssh</a></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="openssl-生成随机字符串"><a href="#openssl-生成随机字符串" class="header-anchor">#</a> openssl 生成随机字符串</h1> <div class="language-sh extra-class"><pre class="language-sh"><code>
+<span class="token comment"># example 生成16位base64字符</span>
+openssl rand -base64 <span class="token number">16</span>
+<span class="token comment"># example 生成16位hex字符</span>
+openssl rand -hex <span class="token number">16</span>
+
+<span class="token comment"># openssl 命令集 </span>
+
+<span class="token comment"># Standard commands</span>
+<span class="token comment"># asn1parse         ca                certhash          ciphers           </span>
+<span class="token comment"># crl               crl2pkcs7         dgst              dh                </span>
+<span class="token comment"># dhparam           dsa               dsaparam          ec                </span>
+<span class="token comment"># ecparam           enc               errstr            gendh             </span>
+<span class="token comment"># gendsa            genpkey           genrsa            nseq              </span>
+<span class="token comment"># ocsp              passwd            pkcs12            pkcs7             </span>
+<span class="token comment"># pkcs8             pkey              pkeyparam         pkeyutl           </span>
+<span class="token comment"># prime             rand              req               rsa               </span>
+<span class="token comment"># rsautl            s_client          s_server          s_time            </span>
+<span class="token comment"># sess_id           smime             speed             spkac             </span>
+<span class="token comment"># ts                verify            version           x509              </span>
+
+<span class="token comment"># Message Digest commands (see the `dgst' command for more details)</span>
+<span class="token comment"># gost-mac          md4               md5               md_gost94         </span>
+<span class="token comment"># ripemd160         sha1              sha224            sha256            </span>
+<span class="token comment"># sha384            sha512            streebog256       streebog512       </span>
+<span class="token comment"># whirlpool         </span>
+
+<span class="token comment"># Cipher commands (see the `enc' command for more details)</span>
+<span class="token comment"># aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       </span>
+<span class="token comment"># aes-256-cbc       aes-256-ecb       base64            bf                </span>
+<span class="token comment"># bf-cbc            bf-cfb            bf-ecb            bf-ofb            </span>
+<span class="token comment"># camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  camellia-192-ecb  </span>
+<span class="token comment"># camellia-256-cbc  camellia-256-ecb  cast              cast-cbc          </span>
+<span class="token comment"># cast5-cbc         cast5-cfb         cast5-ecb         cast5-ofb         </span>
+<span class="token comment"># chacha            des               des-cbc           des-cfb           </span>
+<span class="token comment"># des-ecb           des-ede           des-ede-cbc       des-ede-cfb       </span>
+<span class="token comment"># des-ede-ofb       des-ede3          des-ede3-cbc      des-ede3-cfb      </span>
+<span class="token comment"># des-ede3-ofb      des-ofb           des3              desx              </span>
+<span class="token comment"># rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc           </span>
+<span class="token comment"># rc2-cfb           rc2-ecb           rc2-ofb           rc4               </span>
+<span class="token comment"># rc4-40            </span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/notes/frp.html" class="prev"><i aria-label="icon: left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></i>
+        Frps服务端/Frp客户端
+      </a></span> <span class="next"><a href="/notes/ssh.html">
+        ssh
+        <i aria-label="icon: right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg></i></a></span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b39ed7dd.js" defer></script><script src="/assets/js/2.e0e877e7.js" defer></script><script src="/assets/js/37.238a51b7.js" defer></script>
+  </body>
+</html>

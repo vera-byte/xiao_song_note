@@ -37,7 +37,7 @@ git remote set-url --add origin 仓库地址
 ```
 
 
-# 项目中同步官网库
+# 项目中同步官方库
 ``` sh
 # 查看库信息
 git remote -v
