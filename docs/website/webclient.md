@@ -13,5 +13,7 @@ title: "前端网址收藏夹"
 - [uni-app 官网](https://uniapp.dcloud.io/) 一套代码，运行到多个平台
 - [网易云API](https://github.com/Binaryify/NeteaseCloudMusicApi) 可用此API做出一个和网易云音乐的应用
 - [JS工具库Just](https://anguscroll.com/just/just-diff) JS工具库Just dependency-free utilities
+- [CoolUni](https://uni-docs.cool-js.com/) COOL-UNI 是uni-app 的组件库，使用简单，兼容多端。
 
+#
   
