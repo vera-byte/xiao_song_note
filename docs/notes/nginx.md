@@ -16,7 +16,7 @@ location /admin/ #代理名称
         proxy_set_header REMOTE-HOST $remote_addr;
         
         #缓存相关配置
-        #proxy_cache off;
+        proxy_cache off;
         #proxy_cache_key $host$request_uri$is_args$args;
         #proxy_cache_valid 200 304 301 302 1h;
         
