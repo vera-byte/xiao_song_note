@@ -31,7 +31,9 @@ location /admin/ #代理名称
         #        
         #expires 12h;
     }
-     location /socket {  
+    # socket代理
+     location /socket 
+     {  
          proxy_pass ip或域名;   
          proxy_connect_timeout 3600s; #配置点1 
          proxy_read_timeout 3600s; #配置点2,如果没效,可以考虑这个时间配置长一点 
