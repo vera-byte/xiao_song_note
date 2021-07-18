@@ -16,14 +16,14 @@ location /admin/ #代理名称
         proxy_set_header REMOTE-HOST $remote_addr;
         
         #缓存相关配置
-        #proxy_cache cache_one;
+        #proxy_cache off;
         #proxy_cache_key $host$request_uri$is_args$args;
         #proxy_cache_valid 200 304 301 302 1h;
         
         #持久化连接相关配置
-        proxy_connect_timeout 3000s;
-        proxy_read_timeout 86400s;
-        proxy_send_timeout 3000s;
+        # proxy_connect_timeout 3000s;
+        # proxy_read_timeout 86400s;
+        # proxy_send_timeout 3000s;
         # proxy_http_version 1.1;
         # proxy_set_header Upgrade $http_upgrade;
         # proxy_set_header Connection "upgrade";
