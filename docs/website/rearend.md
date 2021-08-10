@@ -7,3 +7,5 @@ Midway 是一个适用于构建 Serverless 服务，传统应用、微服务，�
 
 - [CoolAdmin](https://cool-js.com/) 一个很酷的后台权限管理框架
 开源免费可商用、快速开发、模块化、插件化(全栈快速开发框架)
+
+- [canal](https://github.com/alibaba/canal) 实时监听数据库数据变化(阿里巴巴canal)
