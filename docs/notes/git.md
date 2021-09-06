@@ -65,15 +65,17 @@ git push
 ``` sh
 git checkout dev
 git pull
-checkout master
-merge dev
+git checkout master
+git merge dev
 git push -u origin master
 
 
 ```
 当master代码改动了，需要更新开发分支（dev）上的代码
+``` sh
 git checkout master
 git pull
 git checkout dev
-merge master
-push -u origin dev
+git merge master
+git push -u origin dev
+```
