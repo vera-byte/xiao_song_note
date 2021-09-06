@@ -14,6 +14,7 @@ title: "前端网址收藏夹"
 - [网易云API](https://github.com/Binaryify/NeteaseCloudMusicApi) 可用此API做出一个和网易云音乐的应用
 - [JS工具库Just](https://anguscroll.com/just/just-diff) JS工具库Just dependency-free utilities
 - [CoolUni](https://uni-docs.cool-js.com/) COOL-UNI 是uni-app 的组件库，使用简单，兼容多端。
+- [爱发布](https://github.com/rock-app/fabu.love) 爱发布是一款应用发布平台类似fir.im/蒲公英,支持检查更新,灰度发布等等.
 
 
   
