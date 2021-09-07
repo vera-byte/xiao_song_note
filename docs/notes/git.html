@@ -1852,7 +1852,8 @@ hue-6-2: #e6c07b
 }
 
 </style>
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -1866,7 +1867,7 @@ hue-6-2: #e6c07b
 .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
 </style>
         
-        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         
     </head>
     <body class="vscode-body vscode-light">
@@ -1932,6 +1933,16 @@ git pull
 git checkout dev
 git merge master
 git push -u origin dev
+</div></code></pre>
+<h1 id="回退命令">回退命令</h1>
+<pre><code class="language-sh"><div>
+$ git reset --hard HEAD^ 回退到上个版本
+$ git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前
+$ git reset --hard commit_id 退到/进到 指定commit的sha码
+
+强推到远程：
+
+$ git push origin HEAD --force
 </div></code></pre>
 
     </body>
