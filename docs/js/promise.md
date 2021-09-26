@@ -3,7 +3,7 @@ title: Promise
 ---
 
 ``` js
-const mypromise = new Promise((resolve,reject)=>(){
+const mypromise = new Promise((resolve,reject)=>{
     resolve("成功")
     reject("失败")
 })
