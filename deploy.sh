@@ -28,7 +28,7 @@ git push -u origin master
 
 echo "🤤$(date +'%Y-%m-%d %H:%M:%S')|开始到生产环境部署"
 
-res=$(curl http://bt.metoyun.com:8800/hook?access_key=3sShKfntwHBrrfzo8XsRPiIaxqFR2f1icvtLNDgOX3bS30gC&param=aaa)
+res=$(curl http://123.207.123.153:5112/hook?access_key=3sShKfntwHBrrfzo8XsRPiIaxqFR2f1icvtLNDgOX3bS30gC&param=aaa)
 
 echo "😯-------发送WebHook-------"
 
