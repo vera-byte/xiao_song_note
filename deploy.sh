@@ -12,7 +12,7 @@ set -e
 
 echo "😀-------正在打包项目···-------"
 
-vuepress build docs
+# vuepress build docs
 
 echo "👏-------添加文件到仓库-------"
 
