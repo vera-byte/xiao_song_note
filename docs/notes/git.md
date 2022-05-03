@@ -158,3 +158,18 @@ git rm --cached {submodule_path}    #注意更换为您的子模块路径
 
 
 # Git tag
+
+``` sh 
+# 如果我们要查看所有标签可以使用以下命令：
+git tag
+
+# 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。
+git tag -a v0.9(tagName) 85fc7e7(commit id)
+
+# 指定标签信息命令：
+git tag -a <tagname> -m "runoob.com标签"
+
+# PGP签名标签命令：
+git tag -s <tagname> -m "runoob.com标签"
+
+```

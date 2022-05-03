@@ -2099,6 +2099,19 @@ git rm --cached {submodule_path}    <span class="hljs-comment">#注意更换为�
 
 </div></code></pre>
 <h1 id="git-tag">Git tag</h1>
+<pre><code class="language-sh"><div><span class="hljs-comment"># 如果我们要查看所有标签可以使用以下命令：</span>
+git tag
+
+<span class="hljs-comment"># 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。</span>
+git tag -a v0.9(tagName) 85fc7e7(commit id)
+
+<span class="hljs-comment"># 指定标签信息命令：</span>
+git tag -a &lt;tagname&gt; -m <span class="hljs-string">&quot;runoob.com标签&quot;</span>
+
+<span class="hljs-comment"># PGP签名标签命令：</span>
+git tag -s &lt;tagname&gt; -m <span class="hljs-string">&quot;runoob.com标签&quot;</span>
+
+</div></code></pre>
 </div>
         </div>
         <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
