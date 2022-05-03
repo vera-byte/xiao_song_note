@@ -13,6 +13,7 @@ title: Frps服务端/Frp客户端
 2. 拉取一键搭建脚本
 ``` sh
 wget --no-check-certificate https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/install-frps.sh -O ./install-frps.sh
+
 ```
 3. 增加脚本权限
 ``` sh
