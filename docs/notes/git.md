@@ -104,3 +104,54 @@ $ git reset --hard commit_id 退到/进到 指定commit的sha码
 
 $ git push origin HEAD --force
 ```
+
+# GIT 子模块
+
+## 添加 Submodule
+```sh
+# 添加 Submodule
+git submodule add <repo> [<dir>] [-b <branch>] [<path>]
+
+# 示例：
+git submodule add git@codehub.***.***.com:****/WEB-INF.git
+
+```
+## 拉取包含submodule的仓库
+``` sh
+
+git clone <repo> [<dir>] --recursive
+
+示例：
+git clone git@codehub.***.***.com:****/WEB-INF.git --recursive
+
+
+```
+
+## 获取远端Submodule更新
+
+``` sh
+
+git submodule update --remote
+
+
+```
+
+## 推送更新到子库
+``` sh
+
+git push --recurse-submodules=check
+
+
+```
+
+
+### 删除 Submodule
+
+1. 删除“.gitsubmodule”中对应submodule的条目。
+2. 删除“.git/config”中对应submodule的条目。
+3. 执行命令，删除子模块对应的文件夹。
+``` sh
+
+git rm --cached {submodule_path}    #注意更换为您的子模块路径
+
+```
