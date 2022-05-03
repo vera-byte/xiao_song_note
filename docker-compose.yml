@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  note:
+    image: xiaosongnote
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:8080"
