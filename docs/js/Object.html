@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>JavaScript Array every&lpar;&rpar;</title>
+        <title>&#x51bb;&#x7ed3;&#x5bf9;&#x8c61;</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -1975,29 +1975,26 @@ hue-6-2: #e6c07b
     <body class="vscode-body vscode-light">
         <div class="github-markdown-body github-markdown-auto">
             <div class="github-markdown-content"><hr>
-<h2 id="title-数组方法">title: 数组方法</h2>
-<h1 id="javascript-array-every">JavaScript Array every()</h1>
-<blockquote>
-<p>检查数组所有元素的某个值是否满足某个条件</p>
-</blockquote>
+<h2 id="title-对象方法">title: 对象方法</h2>
+<h1 id="冻结对象">冻结对象</h1>
 <pre><code class="language-js"><div>
-<span class="hljs-keyword">const</span> list = [{<span class="hljs-attr">name</span>:<span class="hljs-string">&#x27;张三&#x27;</span>,<span class="hljs-attr">age</span>:<span class="hljs-number">19</span>},{<span class="hljs-attr">name</span>:<span class="hljs-string">&#x27;李四&#x27;</span>,<span class="hljs-attr">age</span>:<span class="hljs-number">19</span>},{<span class="hljs-attr">name</span>:<span class="hljs-string">&#x27;王五&#x27;</span>,<span class="hljs-attr">age</span>:<span class="hljs-number">19</span>}];
-list.every(<span class="hljs-function">(<span class="hljs-params">e</span>)=&gt;</span>e.age==<span class="hljs-number">19</span>); <span class="hljs-comment">// 返回结果 True</span>
+<span class="hljs-keyword">const</span> options = {
+    <span class="hljs-attr">name</span> : <span class="hljs-string">&quot;小明&quot;</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>
+}
 
-list.every(<span class="hljs-function">(<span class="hljs-params">e</span>)=&gt;</span>e.age==<span class="hljs-number">9</span>); <span class="hljs-comment">// 返回结果 False</span>
+options.name = <span class="hljs-string">&quot;李名&quot;</span> <span class="hljs-comment">//{name: &#x27;李名&#x27;, age: 18}</span>
+<span class="hljs-built_in">Object</span>.freeze(options); <span class="hljs-comment">// 冻结对象</span>
+options.name = <span class="hljs-string">&quot;李四&quot;</span> <span class="hljs-comment">//{name: &#x27;李名&#x27;, age: 18}</span>
 
 </div></code></pre>
-<h1 id="数组去重">数组去重()</h1>
-<pre><code class="language-js"><div> <span class="hljs-keyword">const</span> data = [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">43</span>,<span class="hljs-number">2</span>]
- [... <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>(data)] <span class="hljs-comment">// (7) [2, 3, 4, 5, 6, 7, 43]</span>
+<h1 id="空值合并运算">空值合并运算</h1>
+<pre><code class="language-js"><div><span class="hljs-keyword">const</span> valueNull = <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> a = valueNull ?? <span class="hljs-string">&quot;hello&quot;</span>
+a <span class="hljs-comment">// hello</span>
 
 </div></code></pre>
-<h1 id="过滤数组中非真值">过滤数组中非真值</h1>
-<pre><code class="language-js"><div>
-<span class="hljs-keyword">const</span> nums = [<span class="hljs-literal">null</span> , <span class="hljs-literal">false</span> , <span class="hljs-literal">undefined</span> ,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>]
-nums.filter(<span class="hljs-built_in">Boolean</span>)<span class="hljs-comment">// (3) [2, 3, 5]</span>
-</div></code></pre>
-<p><a href="https://juejin.cn/post/7028018256266919973">数组方法</a></p>
 </div>
         </div>
         

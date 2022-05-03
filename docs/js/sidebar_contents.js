@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 15:23:56
- * @LastEditTime: 2021-08-16 09:56:22
+ * @LastEditTime: 2022-05-04 01:18:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/js/sidebar_contents.js
@@ -12,5 +12,6 @@ module.exports = [
 	"PC页面适配",
 	"promise",
 	"docAnnotation",
-	"Array"
+	"Array",
+	"Object"
 ];
