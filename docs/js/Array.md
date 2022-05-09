@@ -1,7 +1,7 @@
 ---
 title: 数组方法
 ---
-# JavaScript Array every()
+# JavaScript Array every
 > 检查数组所有元素的某个值是否满足某个条件
 
 ``` js
@@ -12,7 +12,7 @@ list.every((e)=>e.age==19); // 返回结果 True
 list.every((e)=>e.age==9); // 返回结果 False
 
 ```
-# 数组去重()
+# 数组去重
 
 
 ``` js
@@ -35,4 +35,3 @@ nums.filter(Boolean)// (3) [2, 3, 5]
 
 
 [数组方法](https://juejin.cn/post/7028018256266919973)
-1
