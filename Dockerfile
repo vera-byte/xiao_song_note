@@ -1,4 +1,6 @@
 FROM node:lts-alpine
+LABEL com.note.version="v1.0.0"
+
 WORKDIR /app
 WORKDIR /source
 COPY  docs /source/docs
