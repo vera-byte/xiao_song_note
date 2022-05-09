@@ -1,16 +1,13 @@
 FROM node:lts-alpine
 WORKDIR /app
-WORKDIR /source
-COPY  docs /source/docs
-COPY  package.json /source/package.json
-COPY  yarn.lock /source/yarn.lock
-RUN cd /source && yarn && yarn build
-
-COPY /docs/.vuepress/dist /app
+COPY  docs /app/docs
+COPY  package.json /app/package.json
+COPY  yarn.lock /app/yarn.lock
+RUN cd /app && yarn && yarn build
 # 删除源代码
-RUN rm -rf source
+RUN rm -rf /app/node_modules && rm -rf /app/yarn.lock && rm -rf /app/package.json
 
-CMD [ "npx","http-server","--port","8080","/app" ]
+CMD [ "npx","http-server","--port","8080","/app/docs/.vuepress/dist" ]
 
 
 
