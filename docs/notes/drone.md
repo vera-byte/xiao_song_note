@@ -26,8 +26,8 @@ steps:
         from_secret: aliyun_access_key_id
       ALIYUN_ACCESS_KEY_SECRET:
         from_secret: aliyun_access_key_secret
-      PROXY_URL: http://gserver.canghai99.com
-      GUGU_DOMAIN: t.52gugu.com
+      PROXY_URL: xxx.com
+      DOMAIN: xxx.com
     commands:
       - mkdir ~/.ssh && echo "$SSH_KEY" > ~/.ssh/id_ed25519 && chmod 0600 ~/.ssh/id_ed25519
       - ssh-keyscan -t ed25519 $REMOTE_HOST >> ~/.ssh/known_hosts
