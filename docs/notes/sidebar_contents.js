@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-21 15:23:56
- * @LastEditTime: 2022-06-10 14:33:16
+ * @LastEditTime: 2022-06-10 16:07:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/docs/notes/sidebar_contents.js
@@ -20,4 +20,5 @@ module.exports = [
 	"Frp Docker",
 	"openssl",
 	"ssh",
+	"Android证书"
 ];
