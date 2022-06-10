@@ -160,4 +160,12 @@ git tag -a <tagname> -m "runoob.com标签"
 # PGP签名标签命令：
 git tag -s <tagname> -m "runoob.com标签"
 
+#git新增忽略已提交过的文件
+git rm --cached filename
+
+#变更为当前主版本
+git reset --hard origin/master
+#查看提交历史
+git log
+
 ```

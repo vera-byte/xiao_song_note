@@ -13,7 +13,12 @@ npm adduser
 
 ``` shell
 //淘宝镜像
-npm  config  set  registry  https://registry.npm.taobao.org 
+# 单次使用
+npm install --registry=https://registry.npm.taobao.org
+
+# 永久使用
+npm config set registry https://registry.npm.taobao.org
+
 ```
 3.  恢复镜像
 
@@ -91,4 +96,12 @@ npm  publish
 
 ``` shell
 npm  -f  unpublish  dollarphpajax@*
+```
+
+
+## 解决mac下npm的xcode报错
+```shell
+# 先安装xcode,安装完成启动一次，确认同意条款，然后执行下面命令。
+
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```

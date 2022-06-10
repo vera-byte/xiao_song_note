@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>Git</title>
+        <title>Npm&#x7b14;&#x8bb0;</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -1957,8 +1957,7 @@ hue-6-2: #e6c07b
 }
 
 </style>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -1975,144 +1974,92 @@ hue-6-2: #e6c07b
     </head>
     <body class="vscode-body vscode-light">
         <div class="github-markdown-body github-markdown-auto">
-            <div class="github-markdown-content"><h1 id="git">Git</h1>
-<h2 id="配置多个远程仓库">配置多个远程仓库</h2>
-<h2 id="准备多个仓库地址">准备多个仓库地址</h2>
-<pre><code class="language-sh"><div>
-GitHub 仓库地址
-Gitee 仓库地址
-Coding 仓库地址
-GitLab 仓库地址
-
-</div></code></pre>
-<h2 id="主仓库">主仓库</h2>
-<pre><code class="language-sh"><div>
-把GitHub上的库添加为默认远程库，这一步和一般操作没啥区别
-
-git remote add origin 仓库地址
-
-</div></code></pre>
-<h2 id="备份仓库">备份仓库</h2>
-<pre><code class="language-sh"><div>
-备份库只push(提交)，不pull
-
-git remote set-url --add origin 仓库地址
-git remote set-url --add origin 仓库地址
-git remote set-url --add origin 仓库地址
-
-</div></code></pre>
-<h1 id="项目中同步官方库">项目中同步官方库</h1>
-<pre><code class="language-sh"><div><span class="hljs-comment"># 查看库信息</span>
-git remote -v
-
-<span class="hljs-comment"># 添加对应的上游仓库信息</span>
-git remote add upstream 仓库地址
-
-
-
-
-<span class="hljs-comment"># 从上游仓库fetch分支信息和提交点</span>
-git fetch upstream
-<span class="hljs-comment"># 切换分支到本地</span>
-git checkout master
-<span class="hljs-comment"># 合并上游master分支到本地master</span>
-git merge upstream/master --allow-unrelated-histories
-<span class="hljs-comment"># 提交更新master</span>
-git push
-
-</div></code></pre>
-<h1 id="分支合并">分支合并</h1>
-<p>开发分支（dev）上的代码达到上线的标准后，要合并到 master 分支</p>
-<pre><code class="language-sh"><div>git checkout dev
-git pull
-git checkout master
-git merge dev
-git push -u origin master
-
-
-</div></code></pre>
-<p>当master代码改动了，需要更新开发分支（dev）上的代码</p>
-<pre><code class="language-sh"><div>git checkout master
-git pull
-git checkout dev
-git merge master
-git push -u origin dev
-</div></code></pre>
-<h1 id="回退命令">回退命令</h1>
-<pre><code class="language-sh"><div>
-$ git reset --hard HEAD^ 回退到上个版本
-$ git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前
-$ git reset --hard commit_id 退到/进到 指定commit的sha码
-
-强推到远程：
-
-$ git push origin HEAD --force
-</div></code></pre>
-<h1 id="git-子模块">GIT 子模块</h1>
-<h2 id="添加-submodule">添加 Submodule</h2>
-<pre><code class="language-sh"><div><span class="hljs-comment"># 添加 Submodule</span>
-git submodule add &lt;repo&gt; [&lt;dir&gt;] [-b &lt;branch&gt;] [&lt;path&gt;]
-
-<span class="hljs-comment"># 示例：</span>
-git submodule add git@codehub.***.***.com:****/WEB-INF.git
-
-</div></code></pre>
-<h2 id="拉取包含submodule的仓库">拉取包含submodule的仓库</h2>
-<pre><code class="language-sh"><div>
-git <span class="hljs-built_in">clone</span> &lt;repo&gt; [&lt;dir&gt;] --recursive
-
-示例：
-git <span class="hljs-built_in">clone</span> git@codehub.***.***.com:****/WEB-INF.git --recursive
-
-
-</div></code></pre>
-<h2 id="获取远端submodule更新">获取远端Submodule更新</h2>
-<pre><code class="language-sh"><div>
-git submodule update --remote
-
-
-</div></code></pre>
-<h2 id="推送更新到子库">推送更新到子库</h2>
-<pre><code class="language-sh"><div>
-git push --recurse-submodules=check
-
-
-</div></code></pre>
-<h3 id="删除-submodule">删除 Submodule</h3>
+            <div class="github-markdown-content"><h1 id="npm笔记">Npm笔记</h1>
+<h2 id="常用命令">常用命令</h2>
 <ol>
-<li>删除“.gitsubmodule”中对应submodule的条目。</li>
-<li>删除“.git/config”中对应submodule的条目。</li>
-<li>执行命令，删除子模块对应的文件夹。</li>
+<li>添加用户</li>
 </ol>
-<pre><code class="language-sh"><div>
-git rm --cached {submodule_path}    <span class="hljs-comment">#注意更换为您的子模块路径</span>
+<pre><code class="language-shell"><div>npm adduser
+</div></code></pre>
+<ol start="2">
+<li>添加镜像</li>
+</ol>
+<pre><code class="language-shell"><div>//淘宝镜像
+<span class="hljs-meta">#</span><span class="bash"> 单次使用</span>
+npm install --registry=https://registry.npm.taobao.org
+<span class="hljs-meta">
+#</span><span class="bash"> 永久使用</span>
+npm config set registry https://registry.npm.taobao.org
 
 </div></code></pre>
-<h1 id="git-tag">Git tag</h1>
-<pre><code class="language-sh"><div><span class="hljs-comment"># 如果我们要查看所有标签可以使用以下命令：</span>
-git tag
+<ol start="3">
+<li>恢复镜像</li>
+</ol>
+<pre><code class="language-shell"><div>npm  config  delete  registry
+或
+npm  config  edit（手动删除）
+</div></code></pre>
+<ol start="4">
+<li>安装</li>
+</ol>
+<pre><code class="language-shell"><div>npm  -g  install  包名  #  全局安装
+npm  install  #  根据package.json文件安装
+npm  install  包名  #  本地安装，在npm运行目录下安装
+npm  install  包名@1.x  #  安装指定版本
+</div></code></pre>
+<ol start="5">
+<li>卸载</li>
+</ol>
+<pre><code class="language-shell"><div>npm  uninstall  包名
+</div></code></pre>
+<ol start="6">
+<li>更新</li>
+</ol>
+<pre><code class="language-shell"><div>npm  -g  update  包名  #  全局更新
+npm  update  包名  #  本地更新
+</div></code></pre>
+<ol start="7">
+<li>查看已安装的模块</li>
+</ol>
+<pre><code class="language-shell"><div>npm  ls
+</div></code></pre>
+<ol start="8">
+<li>生成符号链接</li>
+</ol>
+<pre><code class="language-shell"><div>1、在本地安装好的模块中，运行（添加本地模块到全局链接）：
+npm  link
+2、在要使用的本地目录中，运行（从全局中获取链接）：
+npm  link  模块名
+</div></code></pre>
+<ol start="9">
+<li>执行脚本</li>
+</ol>
+<pre><code class="language-shell"><div>npm  run  在package.json的scripts中定义的脚本命令
+</div></code></pre>
+<ol start="10">
+<li>登录</li>
+</ol>
+<pre><code class="language-shell"><div>npm  login
+</div></code></pre>
+<ol start="11">
+<li>发布包</li>
+</ol>
+<pre><code class="language-shell"><div>npm  init
+npm  publish
+</div></code></pre>
+<ol start="12">
+<li>撤销发布</li>
+</ol>
+<pre><code class="language-shell"><div>npm  -f  unpublish  dollarphpajax@*
+</div></code></pre>
+<h2 id="解决mac下npm的xcode报错">解决mac下npm的xcode报错</h2>
+<pre><code class="language-shell"><div><span class="hljs-meta">#</span><span class="bash"> 先安装xcode,安装完成启动一次，确认同意条款，然后执行下面命令。</span>
 
-<span class="hljs-comment"># 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。</span>
-git tag -a v0.9(tagName) 85fc7e7(commit id)
-
-<span class="hljs-comment"># 指定标签信息命令：</span>
-git tag -a &lt;tagname&gt; -m <span class="hljs-string">&quot;runoob.com标签&quot;</span>
-
-<span class="hljs-comment"># PGP签名标签命令：</span>
-git tag -s &lt;tagname&gt; -m <span class="hljs-string">&quot;runoob.com标签&quot;</span>
-
-<span class="hljs-comment">#git新增忽略已提交过的文件</span>
-git rm --cached filename
-
-<span class="hljs-comment">#变更为当前主版本</span>
-git reset --hard origin/master
-<span class="hljs-comment">#查看提交历史</span>
-git <span class="hljs-built_in">log</span>
-
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 </div></code></pre>
 </div>
         </div>
-        <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
         
     </body>
     </html>
